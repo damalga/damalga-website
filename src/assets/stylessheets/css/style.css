@@ -1,0 +1,412 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+code,
+em,
+img,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+b,
+u,
+i,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+main,
+canvas,
+embed,
+footer,
+header,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer,
+header,
+nav,
+section,
+main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3,
+h4 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 0.6em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.4em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.8em;
+}
+
+p {
+  font-size: 0.9em;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-blend-mode: multiply;
+}
+
+#portfolio {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.9);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  padding: 1em;
+  max-width: 1080px;
+  margin: 0 auto;
+  z-index: 2;
+  position: absolute;
+}
+
+::selection {
+  background: #1B52BF;
+  color: #ffffff;
+}
+
+b {
+  font-weight: 600;
+}
+
+header {
+  padding: 1em;
+}
+header section {
+  flex-direction: column;
+  padding: 1em;
+}
+header section.hello, header section.intro {
+  display: inline-block;
+}
+header section.hello {
+  width: 40%;
+  vertical-align: baseline;
+}
+header section.intro {
+  width: 60%;
+  border-left: 0.05em solid #000;
+}
+header section.name {
+  margin: 1em 0;
+  text-align-last: justify;
+  letter-spacing: 0.1em;
+  border-top: 0.05em solid #000;
+  border-bottom: 0.05em solid #000;
+}
+header section.name h3 {
+  font-size: large;
+}
+
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume section[class^=col-] {
+  width: 33.33%;
+  padding: 1.2em;
+}
+.resume section[class^=col-] .topic {
+  margin-bottom: 2em;
+}
+.resume section[class^=col-] .topic h4 {
+  margin-bottom: 0.6em;
+}
+.resume .col-1 .face {
+  margin: 0 20% 5% 0;
+}
+.resume .col-1 .topic div {
+  display: flex;
+  margin: 1.2em 0;
+}
+.resume .col-1 .topic div img {
+  width: 20%;
+  margin-right: 0.8em;
+}
+.resume .col-1 .topic div p {
+  font-size: 0.9em;
+  line-height: 1.2em;
+}
+.resume .col-2 {
+  flex-direction: column;
+  border-right: 0.05em solid #000;
+  border-left: 0.05em solid #000;
+}
+.resume .col-2 .bar,
+.resume .col-2 .pro-bar {
+  height: 1.2em;
+}
+.resume .col-2 .bar {
+  width: 100%;
+  border: 0.05em solid #000;
+}
+.resume .col-2 .pro-bar {
+  width: 85%;
+  background: #000;
+  position: relative;
+  bottom: 1.2em;
+}
+.resume .col-2 .skills {
+  margin-bottom: 2em;
+}
+.resume .col-2 .skills .branding .pro-bar {
+  width: 72%;
+}
+.resume .col-2 .skills .editorial .pro-bar {
+  width: 64%;
+}
+.resume .col-2 .skills .web-dev .pro-bar {
+  width: 80%;
+}
+.resume .col-2 .skills .music-audio .pro-bar {
+  width: 56%;
+}
+.resume .col-2 .skills .illustration .pro-bar {
+  width: 68%;
+}
+.resume .col-2 .skills .photography .pro-bar {
+  width: 60%;
+}
+.resume .col-2 .skills .photography .pro-bar {
+  width: 52%;
+}
+.resume .col-2 .soft-skills .soft-skill {
+  position: relative;
+  bottom: 0.8em;
+}
+.resume .col-2 .soft-skills .soft-skill img {
+  width: 15%;
+  position: relative;
+  top: 1.635em;
+}
+.resume .col-2 .soft-skills .soft-skill .bar,
+.resume .col-2 .soft-skills .soft-skill .pro-bar {
+  left: 15%;
+}
+.resume .col-2 .soft-skills .soft-skill .bar,
+.resume .col-2 .soft-skills .soft-skill .label-soft-skill {
+  position: relative;
+}
+.resume .col-2 .soft-skills .soft-skill .bar {
+  width: 85%;
+}
+.resume .col-2 .soft-skills .soft-skill .pro-bar.psd-pro-bar {
+  width: 70%;
+}
+.resume .col-2 .soft-skills .soft-skill .pro-bar.ai-pro-bar {
+  width: 64%;
+}
+.resume .col-2 .soft-skills .soft-skill .pro-bar.id-pro-bar {
+  width: 56%;
+}
+.resume .col-2 .soft-skills .soft-skill .pro-bar.pr-pro-bar {
+  width: 44%;
+}
+.resume .col-2 .soft-skills .soft-skill .pro-bar.ae-pro-bar {
+  width: 48%;
+}
+.resume .col-2 .soft-skills .soft-skill .pro-bar.live-pro-bar {
+  width: 52%;
+}
+.resume .col-2 .soft-skills .soft-skill .label-soft-skill {
+  float: right;
+  font-size: 0.8em;
+  bottom: 0.8em;
+  font-style: italic;
+}
+.resume .col-3 h5 {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-bottom: 0.8em;
+}
+.resume .col-3 .front-end-web-tools {
+  margin-bottom: 1em;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons {
+  align-items: flex-end;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons .css,
+.resume .col-3 .front-end-web-tools .front-end-icons .node,
+.resume .col-3 .front-end-web-tools .front-end-icons .git {
+  margin-bottom: 1.5em;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons img,
+.resume .col-3 .front-end-web-tools .front-end-icons .level {
+  width: 56px;
+  padding-top: 0.5em;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons .level {
+  font-size: 1.6em;
+  text-align: center;
+  color: #444;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons .level span {
+  font-size: 0.8em;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons .text {
+  width: 75%;
+  float: right;
+  line-height: 1.4em;
+}
+.resume .col-3 .front-end-web-tools .cms {
+  font-size: 0.8em;
+  font-style: italic;
+  line-height: 1.2em;
+  margin-bottom: 1em;
+}
+.resume .col-3 .langs .level {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-weight: 600;
+}
+.resume .col-3 .langs .level label,
+.resume .col-3 .langs .level span {
+  display: block;
+}
+.resume .col-3 .langs .level span {
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+.resume .col-3 .interests .points {
+  display: flex;
+  align-items: flex-end;
+}
+.resume .col-3 .interests .points .interest {
+  text-align: center;
+}
+.resume .col-3 .interests .points .interest img {
+  width: 48px;
+}
+.resume .col-3 .interests .points .interest p {
+  line-height: 1em;
+}
+.resume .col-3 .contact .points .point {
+  margin-bottom: 0.8em;
+}
+.resume .col-3 .contact .points .point p {
+  line-height: 1em;
+}
+
+@media only screen and (max-width: 760px) {
+  .resume section[class^=col-] {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

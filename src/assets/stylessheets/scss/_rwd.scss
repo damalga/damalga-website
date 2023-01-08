@@ -1,0 +1,7 @@
+@media only screen and (max-width: 760px) {
+    .resume {
+        section[class^=col-] {
+            width: 100%;
+        }
+    }
+}

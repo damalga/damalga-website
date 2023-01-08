@@ -1,0 +1,25 @@
+{
+    "name": "vite-react",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@studio-freight/lenis": "^0.2.28",
+        "react": "^18.2.0",
+        "react-curtains": "^1.0.10",
+        "react-dom": "^18.2.0",
+        "sass": "^1.54.5",
+        "vec2": "^1.6.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.17",
+        "@types/react-dom": "^18.0.6",
+        "@vitejs/plugin-react": "^2.0.1",
+        "vite": "^3.0.7"
+    }
+}

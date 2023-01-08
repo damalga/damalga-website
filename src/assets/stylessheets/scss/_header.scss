@@ -1,0 +1,29 @@
+header {
+    padding: 1em;
+    section {
+        flex-direction: column;
+        padding: 1em;
+        &.hello,
+        &.intro {
+            display: inline-block;
+        }
+        &.hello {
+            width: 40%;
+            vertical-align: baseline;
+        }
+        &.intro {
+            width: 60%;
+            border-left: .05em solid #000;
+        }
+        &.name {
+            margin: 1em 0;
+            text-align-last: justify;
+            letter-spacing: .1em;
+            border-top: .05em solid #000;
+            border-bottom: .05em solid #000;
+            h3 {
+                font-size: large;
+            }
+        }
+    }
+}
