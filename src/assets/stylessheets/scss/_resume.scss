@@ -18,14 +18,22 @@
         .topic {
             div {
                 display: flex;
+                align-items: center;
                 margin: 1.2em 0;
                 img {
                     width: 20%;
                     margin-right: .8em;
                 }
                 p {
-                    font-size: .9em;
-                    line-height: 1.2em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+        .projects {
+            p {
+                font-weight: 600;
+                span {
+                    font-weight: 400;
                 }
             }
         }
@@ -151,12 +159,15 @@
                 img,
                 .level {
                     width: 56px;
+                }
+                img {
                     padding-top: .5em;
                 }
                 .level {
                     font-size: 1.6em;
                     text-align: center;
                     color: #444;
+                    padding-top: .25em;
                     span {
                         font-size: .8em;
                     }
@@ -170,14 +181,14 @@
             .cms {
                 font-size: .8em;
                 font-style: italic;
-                line-height: 1.2em;
+                line-height: 1.4em;
                 margin-bottom: 1em;
             }
         }
         .langs {
             .level {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 text-align: center;
                 font-weight: 600;
                 label,

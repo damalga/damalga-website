@@ -321,9 +321,7 @@ function Canvas() {
         const curtainsBBox = curtains.getBoundingRect();
     
         // our ripples ping pong fbo
-        const ripples = new PingPongPlane(curtains,
-                                        document.getElementById("canvas"),
-                                        {
+        const ripples = new PingPongPlane(curtains, document.getElementById("canvas"),{
         vertexShader: ripplesVs,
         fragmentShader: ripplesFs,
         autoloadSources: false,
@@ -456,7 +454,7 @@ function Canvas() {
         hue: {
             name: "uHue",
             type: "1f",
-            value: 6.28
+            value: 3
         },
         saturation: {
             name: "uSaturation",

@@ -48,15 +48,15 @@ function Column3() {
           <div className='points'>
             <div className='music-cinema interest'>
               <img src={musiccinema} className="music-cinema-img" alt="music and cinema"/>
-              <p>Music, cinema</p>
+              <p>Music, cinema & digital arts</p>
             </div>
             <div className='sci-tec interest'>
               <img src={scitec} className="sci-tec-img" alt="science and technology"/>
-              <p>Science & Technology</p>
+              <p>Science, Nature & Technology</p>
             </div>
             <div className='trips-literature interest'>
               <img src={tripsliterature} className="trips-literature-img" alt="trips and literature"/>
-              <p>Trips & narratives</p>
+              <p>Trips, vehicles & narratives</p>
             </div>
           </div>
         </div>
@@ -65,13 +65,9 @@ function Column3() {
           <h4>CONTACT</h4>
           <div className='points'>
             <div className='email point'>
-              <p><b>Email:</b><br></br>
-              damalgadesign[at]gmail.com
-              </p>
-            </div>
-            <div className='phone'>
-              <p><b>Phone:</b><br></br>
-              (+34) 644 04 56 93
+              <p>
+                <b>Email:</b><br></br>
+                damalgadesign[at]gmail.com
               </p>
             </div>
           </div>

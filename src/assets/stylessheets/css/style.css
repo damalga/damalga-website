@@ -195,7 +195,7 @@ header section.hello, header section.intro {
   display: inline-block;
 }
 header section.hello {
-  width: 40%;
+  width: 33.33%;
   vertical-align: baseline;
 }
 header section.intro {
@@ -232,6 +232,7 @@ header section.name h3 {
 }
 .resume .col-1 .topic div {
   display: flex;
+  align-items: center;
   margin: 1.2em 0;
 }
 .resume .col-1 .topic div img {
@@ -239,8 +240,13 @@ header section.name h3 {
   margin-right: 0.8em;
 }
 .resume .col-1 .topic div p {
-  font-size: 0.9em;
-  line-height: 1.2em;
+  line-height: 1.4em;
+}
+.resume .col-1 .projects p {
+  font-weight: 600;
+}
+.resume .col-1 .projects p span {
+  font-weight: 400;
 }
 .resume .col-2 {
   flex-direction: column;
@@ -348,12 +354,15 @@ header section.name h3 {
 .resume .col-3 .front-end-web-tools .front-end-icons img,
 .resume .col-3 .front-end-web-tools .front-end-icons .level {
   width: 56px;
+}
+.resume .col-3 .front-end-web-tools .front-end-icons img {
   padding-top: 0.5em;
 }
 .resume .col-3 .front-end-web-tools .front-end-icons .level {
   font-size: 1.6em;
   text-align: center;
   color: #444;
+  padding-top: 0.25em;
 }
 .resume .col-3 .front-end-web-tools .front-end-icons .level span {
   font-size: 0.8em;
@@ -366,12 +375,12 @@ header section.name h3 {
 .resume .col-3 .front-end-web-tools .cms {
   font-size: 0.8em;
   font-style: italic;
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: 1em;
 }
 .resume .col-3 .langs .level {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   font-weight: 600;
 }
@@ -404,9 +413,28 @@ header section.name h3 {
   line-height: 1em;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 720px) {
+  header section.hello {
+    vertical-align: bottom;
+  }
   .resume section[class^=col-] {
     width: 100%;
+  }
+  .resume .col-1 .face {
+    margin: auto;
+    padding: 0 4.8em 2.4em;
+  }
+  .resume .col-2 {
+    border: 0;
+  }
+  .resume .col-3 .topic .level,
+  .resume .col-3 .topic .points {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .resume .col-1 .face {
+    padding: 0 2.4em 1.2em;
   }
 }
 

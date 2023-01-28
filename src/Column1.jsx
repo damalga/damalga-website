@@ -19,14 +19,14 @@ function Column1() {
           <h4>EDUCATION</h4>
           <div className='course school'>
             <p><b>50h on-site course</b> in Javascript.<br></br>
-            Asociación Española de <br></br>Programadores Informáticos [2019 - 2 months].
+            Asociación Española de <br></br>Programadores Informáticos<br></br>[2019 - 2 months].
             </p>
           </div>
           <div className='master school'>
-            <p><b>300h on-site course + final project</b> in web design and development. Escuela CICE. [2016 -- 6 months]</p>
+            <p><b>300h on-site course + final project</b> in web design and development. Escuela CICE.<br></br>[2016 -- 6 months]</p>
           </div>
           <div className='degree school'>
-            <p><b>Graphic Design Degree</b> in the <b>Escuela Superior de Diseño de Madrid</b> (ESDM). [2012 --- 2017]</p>
+            <p><b>Graphic Design Degree</b> in the <b>Escuela Superior de Diseño de Madrid</b> (ESDM).<br></br>[2012 --- 2017]</p>
           </div>
           <div className='erasmus school'>
             <p><b>Erasmus+</b> in <b>Aalto University</b> school of arts, design and achitecture (Finland).<br></br> [2015 -- 2nd semester]</p>
@@ -58,14 +58,16 @@ function Column1() {
           <div className='alcarcia project'>
             <img src={alcarcia} alt="alcarcia logo" />
             <p>
-              Alcarcia<br></br>
+              Alcarcia <br></br>
+              <span>Artist / Producer</span><br></br>
               <a href='https://www.alcarcia.com' target="_blank">Website</a>
             </p>
           </div>
           <div className='polymorphism project'>
             <img src={polymorphism} alt="polymorphism logo" />
             <p>
-              Polymorphism Records<br></br>
+              Polymorphism Records <br></br>
+              <span>Record label</span><br></br>
               <a href='https://www.polymorphismrecords.com' target="_blank">Website</a>
             </p>
           </div>

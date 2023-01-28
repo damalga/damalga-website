@@ -1,7 +1,43 @@
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 720px) {
+    //rwd-header
+    header {
+        section {
+            &.hello {
+                vertical-align: bottom;
+            }
+        }
+    }
+    //rwd-resume
     .resume {
         section[class^=col-] {
             width: 100%;
+        }
+        .col-1 {
+            .face {
+                margin: auto;
+                padding: 0 4.8em 2.4em;
+            }
+        }
+        .col-2 {
+            border: 0;
+        }
+        .col-3 {
+            .topic {
+                .level,
+                .points {
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .resume {
+        .col-1 {
+            .face {
+                padding: 0 2.4em 1.2em;
+            }
         }
     }
 }
