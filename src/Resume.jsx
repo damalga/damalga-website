@@ -5,7 +5,6 @@ import Column2 from './Column2'
 import Column3 from './Column3'
 
 function Resume() {
-
   return (
     <main className='resume'>
         <Column1 />

@@ -5,35 +5,42 @@
         width: 33.33%;
         padding: 1.2em;
         .topic {
-            margin-bottom: 2em;
-            h4 {
-                margin-bottom: .6em;
-            }
+            margin-bottom: 1.6em;
         }
+    }
+    .bold,
+    .link {
+        font-weight: 600;
+        span {
+            font-weight: 400;
+        }
+    }
+    .link {
+        color: $black;
+    }
+    .extra-info {
+        font-size: .8em;
+        font-style: italic;
+        line-height: 1.4em;
+        margin-bottom: 1em;
+    }
+    p {
+        line-height: 1.4em;
     }
     .col-1 {
         .face {
-            margin: 0 20% 5% 0;
+            margin: 0 30% 5% 0;
         }
-        .topic {
-            div {
+        .edu,
+        .work {
+            .school,
+            .job {
                 display: flex;
                 align-items: center;
                 margin: 1.2em 0;
                 img {
                     width: 20%;
                     margin-right: .8em;
-                }
-                p {
-                    line-height: 1.4em;
-                }
-            }
-        }
-        .projects {
-            p {
-                font-weight: 600;
-                span {
-                    font-weight: 400;
                 }
             }
         }
@@ -42,59 +49,72 @@
         flex-direction: column;
         border-right: .05em solid #000;
         border-left: .05em solid #000;
-        .bar,
-        .pro-bar {
-            height: 1.2em;
-        }
-        .bar {
-            width: 100%;
-            border: .05em solid #000;
-        }
-        .pro-bar {
-            width: 85%;
-            background: #000;
-            position: relative;
-            bottom: 1.2em;
+        .projects {
+            .project {
+                display: flex;
+                align-items: center;
+                margin: 1.2em 0;
+                img {
+                    width: 25%;
+                    margin-right: .8em;
+                }
+            }
         }
         .skills {
-            margin-bottom: 2em;
-            .branding {
-                .pro-bar {
-                    width: 72%;
-                }
+            .on-off,
+            .front-end {
+                margin-bottom: 1em;
             }
-            .editorial {
-                .pro-bar {
-                    width: 64%;
-                }
-            }
-            .web-dev {
-                .pro-bar {
-                    width: 80%;
-                }
-            }
-            .music-audio {
-                .pro-bar {
-                    width: 56%;
-                }
-            }
-            .illustration {
-                .pro-bar {
-                    width: 68%;
-                }
-            }
-            .photography {
-                .pro-bar {
-                    width: 60%;
-                }
-            }
-            .photography {
-                .pro-bar {
-                    width: 52%;
+            .front-end {
+                .front-end-icons {
+                    align-items: flex-end;
+                    .css,
+                    .node,
+                    .git {
+                        margin-bottom: .5em;
+                    }
+                    img,
+                    .level {
+                        width: 56px;
+                    }
+                    img {
+                        padding-top: .5em;
+                    }
+                    .level {
+                        font-size: 1.6em;
+                        text-align: center;
+                        color: #444;
+                        padding-top: .25em;
+                        display: inline-block;
+                        span {
+                            font-size: .8em;
+                        }
+                    }
+                    .text {
+                        width: 75%;
+                        float: right;
+                        line-height: 1.4em;
+                    }
                 }
             }
         }
+    }
+    .col-3 {
         .soft-skills {
+            .bar,
+            .pro-bar {
+                height: 1.2em;
+            }
+            .bar {
+                width: 100%;
+                border: .05em solid #000;
+            }
+            .pro-bar {
+                width: 85%;
+                background: #000;
+                position: relative;
+                bottom: 1.2em;
+            }
             .soft-skill {
                 position: relative;
                 bottom: .8em;
@@ -138,51 +158,6 @@
                     bottom: .8em;
                     font-style: italic;
                 }
-            }
-        }
-    }
-    .col-3 {
-        h5 {
-            font-size: 1.2em;
-            font-weight: 700;
-            margin-bottom: .8em;
-        }
-        .front-end-web-tools {
-            margin-bottom: 1em;
-            .front-end-icons {
-                align-items: flex-end;
-                .css,
-                .node,
-                .git {
-                    margin-bottom: 1.5em;
-                }
-                img,
-                .level {
-                    width: 56px;
-                }
-                img {
-                    padding-top: .5em;
-                }
-                .level {
-                    font-size: 1.6em;
-                    text-align: center;
-                    color: #444;
-                    padding-top: .25em;
-                    span {
-                        font-size: .8em;
-                    }
-                }
-                .text {
-                    width: 75%;
-                    float: right;
-                    line-height: 1.4em;
-                }
-            }
-            .cms {
-                font-size: .8em;
-                font-style: italic;
-                line-height: 1.4em;
-                margin-bottom: 1em;
             }
         }
         .langs {

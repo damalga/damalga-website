@@ -454,12 +454,12 @@ function Canvas() {
         hue: {
             name: "uHue",
             type: "1f",
-            value: 3
+            value: 16
         },
         saturation: {
             name: "uSaturation",
             type: "1f",
-            value: 1.5
+            value: 1
         },
         bgColor: {
             name: "uBgColor",

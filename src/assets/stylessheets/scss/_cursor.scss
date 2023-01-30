@@ -1,0 +1,28 @@
+body,
+a {
+    cursor: none;
+}
+
+.cursor {
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 100;
+     :hover {
+        --size: 2em;
+        border: .05em solid $blue;
+    }
+    &--large {
+        --size: 2em;
+        border: .05em solid $blue;
+    }
+    &--small {
+        --size: .5em;
+        background: $blue;
+        transform: translate(-50%, -50%);
+    }
+}

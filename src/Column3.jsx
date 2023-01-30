@@ -1,6 +1,9 @@
-import css from './assets/svgs/css.svg'
-import git from './assets/svgs/git.svg'
-import nodee from './assets/svgs/nodee.svg'
+import ps from './assets/svgs/ps.svg'
+import ai from './assets/svgs/ai.svg'
+import id from './assets/svgs/id.svg'
+import pr from './assets/svgs/pr.svg'
+import ae from './assets/svgs/ae.svg'
+import live from './assets/svgs/live.svg'
 import musiccinema from './assets/svgs/music-cinema.svg'
 import scitec from './assets/svgs/sci-tec.svg'
 import tripsliterature from './assets/svgs/trips-literature.svg'
@@ -9,30 +12,45 @@ function Column3() {
 
   return (
       <section className='col-3'>
-        <div className='front-end-web-tools'>
-          <h5>Front-end web tools</h5>
-          <div className='front-end-icons'>
-            <div className='css'>
-              <img src={css} alt="bootstrap" />
-              <p className='text'>Advanced knowledge in HTML, CSS, Sass, grid-layout, flex-box and any kind of stylesheets based library.</p>
-              <p className='level'>***</p>
-            </div>
-            <div className='node'>
-              <img src={nodee} alt="node" />
-              <p className='text'>Mid level in Javascript, super into creative visual libraries and I’m super interested in any new in the node.js ecosystem.</p>
-              <p className='level'>**</p>
-            </div>
-            <div className='git'>
-              <img src={git} alt="git" />
-              <p className='text'><del> Low level </del> Begineer in...<br></br>
-              Ignorant of everthing.<br></br>
-              Full coding energy.<br></br>
-              Github, Bitbucket & Stack...
-              User: damalga</p>
-              <p className='level'>*</p>
-            </div>
+
+        <div className='soft-skills topic'>
+          <h4>SOFTWARE SKILLS</h4>
+
+          <h5>Graphic tools</h5>
+          <div className='soft-skill'>
+            <img src={ps} alt="photoshop logo psd adobe" />
+            <div className='bar psd-bar'></div><div className='pro-bar psd-pro-bar'></div>
+            <p className='label-soft-skill psd'>photoshop</p>
           </div>
-          <p className='cms'>Countless experiences as front-end developer in projects built on Ruby on Rails, React, Symfony... and many CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM.</p>
+          <div className='soft-skill'>
+            <img src={ai} alt="illustrator logo ai adobe" />
+            <div className='bar ai-bar'></div><div className='pro-bar ai-pro-bar'></div>
+            <p className='label-soft-skill ai'>illustrator</p>
+          </div>
+          <div className='soft-skill'>
+            <img src={id} alt="indesign logo id adobe" />
+            <div className='bar id-bar'></div><div className='pro-bar id-pro-bar'></div>
+            <p className='label-soft-skill id'>indesign</p>
+          </div>
+
+          <h5>Video tools</h5>
+          <div className='soft-skill'>
+            <img src={pr} alt="premiere logo pr adobe" />
+            <div className='bar pr-bar'></div><div className='pro-bar pr-pro-bar'></div>
+            <p className='label-soft-skill pr'>Premiere</p>
+          </div>
+          <div className='soft-skill'>
+            <img src={ae} alt="after effects logo ae adobe" />
+            <div className='bar ae-bar'></div><div className='pro-bar ae-pro-bar'></div>
+            <p className='label-soft-skill ae'>After Effects</p>
+          </div>
+          
+          <h5>Audio tools</h5>
+          <div className='soft-skill'>
+            <img src={live} alt="ableton live logo" />
+            <div className='bar live-bar'></div><div className='pro-bar live-pro-bar'></div>
+            <p className='label-soft-skill pr'>Ableton</p>
+          </div>
         </div>
 
         <div className='langs topic'>
@@ -66,8 +84,7 @@ function Column3() {
           <div className='points'>
             <div className='email point'>
               <p>
-                <b>Email:</b><br></br>
-                damalgadesign[at]gmail.com
+                <b>Email:</b> damalgadesign[at]gmail.com
               </p>
             </div>
           </div>

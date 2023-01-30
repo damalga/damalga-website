@@ -1,12 +1,8 @@
-import React from 'react'
-
 import face from './assets/svgs/face.svg'
 import cheil from './assets/svgs/cheil.svg'
 import amaris from './assets/svgs/amaris.svg'
 import nateevo from './assets/svgs/nateevo.svg'
 import ging from './assets/svgs/ging.svg'
-import alcarcia from './assets/svgs/alcarcia.svg'
-import polymorphism from './assets/svgs/polymorphism.svg'
 
 function Column1() {
 
@@ -50,26 +46,6 @@ function Column1() {
           <div className='ging job'>
             <img src={ging} alt="ging logo" />
             <p>Research scholarship,<br></br> <b>GING</b> (ETSIT / UPM).<br></br> (2016 - 2017).</p>
-          </div>
-        </div>
-
-        <div className='projects topic'>
-          <h4>PROJECTS</h4>
-          <div className='alcarcia project'>
-            <img src={alcarcia} alt="alcarcia logo" />
-            <p>
-              Alcarcia <br></br>
-              <span>Artist / Producer</span><br></br>
-              <a href='https://www.alcarcia.com' target="_blank">Website</a>
-            </p>
-          </div>
-          <div className='polymorphism project'>
-            <img src={polymorphism} alt="polymorphism logo" />
-            <p>
-              Polymorphism Records <br></br>
-              <span>Record label</span><br></br>
-              <a href='https://www.polymorphismrecords.com' target="_blank">Website</a>
-            </p>
           </div>
         </div>
       </section>

@@ -1,83 +1,62 @@
-import ps from './assets/svgs/ps.svg'
-import ai from './assets/svgs/ai.svg'
-import id from './assets/svgs/id.svg'
-import pr from './assets/svgs/pr.svg'
-import ae from './assets/svgs/ae.svg'
-import live from './assets/svgs/live.svg'
+import alcarcia from './assets/svgs/alcarcia.svg'
+import polymorphism from './assets/svgs/polymorphism.svg'
+import css from './assets/svgs/css.svg'
+import git from './assets/svgs/git.svg'
+import nodee from './assets/svgs/nodee.svg'
 
 function Column2() {
 
   return (
       <section className='col-2'>
-        <div className='skills topic'>
-          <h4>SKILLS</h4>
-          <div className='branding'>
-            <h5>Branding:</h5>
-            <div className='bar branding-bar'></div><div className='pro-bar branding-pro-bar'></div>
+
+        <div className='projects topic'>
+          <h4>PROJECTS</h4>
+          <div className='alcarcia project'>
+            <img src={alcarcia} alt="alcarcia logo" />
+            <p className='bold'>Alcarcia <br></br>
+              <span>Artist / Producer</span><br></br>
+              <a className='link' href='https://www.alcarcia.com' target="_blank">Website</a>
+            </p>
           </div>
-          <div className='editorial'>
-            <h5>Editorial:</h5>
-            <div className='bar editorial-bar'></div><div className='pro-bar editorial-pro-bar'></div>
+          <div className='polymorphism project'>
+            <img src={polymorphism} alt="polymorphism logo" />
+            <p className='bold'>Polymorphism Records <br></br>
+              <span>Record label</span><br></br>
+              <a className='link' href='https://www.polymorphismrecords.com' target="_blank">Website</a>
+            </p>
           </div>
-          <div className='web-dev'>
-            <h5>Web development (Front-end):</h5>
-            <div className='bar web-dev-bar'></div><div className='pro-bar web-dev-pro-bar'></div>
-          </div>
-          <div className='music-audio'>
-            <h5>Music/Audio Production:</h5>
-            <div className='bar music-audio-bar'></div><div className='pro-bar music-audio-pro-bar'></div>
-          </div>
-          <div className='illustration'>
-            <h5>Illustration:</h5>
-            <div className='bar illustration-bar'></div><div className='pro-bar illustration-pro-bar'></div>
-          </div>
-          <div className='photography'>
-            <h5>Photography:</h5>
-            <div className='bar photography-bar'></div><div className='pro-bar photography-pro-bar'></div>
-          </div>
-          <div className='video'>
-            <h5>Video:</h5>
-            <div className='bar video-bar'></div><div className='pro-bar video-pro-bar'></div>
-          </div>
+          <p className='extra-info'>Both projects take electronic music as their starting point. I collect vinyls and I'm fascinated by synthesizers, drum machines and basically any gadget that makes noise.</p>
         </div>
 
-        <div className='soft-skills topic'>
-          <h4>SOFTWARE SKILLS</h4>
-
-          <h5>Graphic tools</h5>
-          <div className='soft-skill'>
-            <img src={ps} alt="photoshop logo psd adobe" />
-            <div className='bar psd-bar'></div><div className='pro-bar psd-pro-bar'></div>
-            <p className='label-soft-skill psd'>photoshop</p>
+        <div className='skills topic'>
+          <h4>SKILLS</h4>
+          <div className='on-off'>
+            <h5>Print & Digital</h5>
+            <p>I have many useful references and resources to transmit the values of a brand and graphically capture them into online and offline media... In my <a className='link' href='https://www.behance.net/damalga'>Behance</a> account you can find some of the work that I have most enjoyed to date.</p>
           </div>
-          <div className='soft-skill'>
-            <img src={ai} alt="illustrator logo ai adobe" />
-            <div className='bar ai-bar'></div><div className='pro-bar ai-pro-bar'></div>
-            <p className='label-soft-skill ai'>illustrator</p>
-          </div>
-          <div className='soft-skill'>
-            <img src={id} alt="indesign logo id adobe" />
-            <div className='bar id-bar'></div><div className='pro-bar id-pro-bar'></div>
-            <p className='label-soft-skill id'>indesign</p>
-          </div>
-
-          <h5>Video tools</h5>
-          <div className='soft-skill'>
-            <img src={pr} alt="premiere logo pr adobe" />
-            <div className='bar pr-bar'></div><div className='pro-bar pr-pro-bar'></div>
-            <p className='label-soft-skill pr'>Premiere</p>
-          </div>
-          <div className='soft-skill'>
-            <img src={ae} alt="after effects logo ae adobe" />
-            <div className='bar ae-bar'></div><div className='pro-bar ae-pro-bar'></div>
-            <p className='label-soft-skill ae'>After Effects</p>
-          </div>
-          
-          <h5>Audio tools</h5>
-          <div className='soft-skill'>
-            <img src={live} alt="ableton live logo" />
-            <div className='bar live-bar'></div><div className='pro-bar live-pro-bar'></div>
-            <p className='label-soft-skill pr'>Ableton</p>
+          <div className='front-end'>
+            <h5>Front-end web tools</h5>
+            <div className='front-end-icons'>
+              <div className='css'>
+                <img src={css} alt="bootstrap" />
+                <p className='text'>Advanced knowledge in HTML, CSS, Sass, grid-layout, flex-box and any kind of stylesheets based library.</p>
+                <p className='level'>***</p>
+              </div>
+              <div className='node'>
+                <img src={nodee} alt="node" />
+                <p className='text'>Mid level in Javascript, super into creative visual libraries and I’m super interested in any new in the node.js ecosystem.</p>
+                <p className='level'>**</p>
+              </div>
+              <div className='git'>
+                <img src={git} alt="git" />
+                <p className='text'><del> Low level </del> Begineer in...<br></br>
+                Ignorant of everthing.<br></br>
+                Full coding energy.<br></br>
+                <a className='link' href="https://github.com/damalga">Github</a>, <a className='link' href="https://bitbucket.org/damalga/">Bitbucket</a> & <a className='link' href="https://stackoverflow.com/users/9181614/damalga">Stack</a>...</p>
+                <p className='level'>*</p>
+              </div>
+            </div>
+            <p className='extra-info'>Countless experiences as front-end developer in projects built on Ruby on Rails, Symfony, React... and many CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM.</p>
           </div>
         </div>
 
