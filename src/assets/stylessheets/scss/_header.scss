@@ -1,29 +1,38 @@
 header {
     padding: 1em;
-    section {
-        flex-direction: column;
+    div {
         padding: 1em;
-        &.hello,
-        &.intro {
+    }
+    section.first {
+        margin-bottom: 2em;
+        .hello,
+        .intro {
             display: inline-block;
         }
-        &.hello {
+        .hello {
             width: 33.33%;
-            vertical-align: baseline;
-        }
-        &.intro {
-            width: 60%;
-            border-left: .05em solid #000;
-        }
-        &.name {
-            margin: 1em 0;
-            text-align-last: justify;
-            letter-spacing: .1em;
-            border-top: .05em solid #000;
-            border-bottom: .05em solid #000;
-            h3 {
-                font-size: large;
+            vertical-align: bottom;
+            h1 {
+                margin-bottom: 0;
             }
+        }
+        .intro {
+            width: 66.66%;
+            border-left: .05em solid $black;
+        }
+    }
+}
+
+section.second {
+    .name {
+        margin: 1em 0;
+        text-align-last: justify;
+        letter-spacing: .1em;
+        border-top: .05em solid #000;
+        border-bottom: .05em solid #000;
+        h3 {
+            font-size: large;
+            margin-bottom: 0;
         }
     }
 }

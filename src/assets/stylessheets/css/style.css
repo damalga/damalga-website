@@ -225,30 +225,38 @@ a {
 header {
   padding: 1em;
 }
-header section {
-  flex-direction: column;
+header div {
   padding: 1em;
 }
-header section.hello, header section.intro {
+header section.first {
+  margin-bottom: 2em;
+}
+header section.first .hello,
+header section.first .intro {
   display: inline-block;
 }
-header section.hello {
+header section.first .hello {
   width: 33.33%;
-  vertical-align: baseline;
+  vertical-align: bottom;
 }
-header section.intro {
-  width: 60%;
-  border-left: 0.05em solid #000;
+header section.first .hello h1 {
+  margin-bottom: 0;
 }
-header section.name {
+header section.first .intro {
+  width: 66.66%;
+  border-left: 0.05em solid #000000;
+}
+
+section.second .name {
   margin: 1em 0;
   text-align-last: justify;
   letter-spacing: 0.1em;
   border-top: 0.05em solid #000;
   border-bottom: 0.05em solid #000;
 }
-header section.name h3 {
+section.second .name h3 {
   font-size: large;
+  margin-bottom: 0;
 }
 
 .resume {
@@ -432,7 +440,7 @@ header section.name h3 {
   width: 48px;
 }
 .resume .col-3 .interests .points .interest p {
-  line-height: 1em;
+  line-height: 1.2em;
 }
 .resume .col-3 .contact .points .point {
   margin-bottom: 0.8em;

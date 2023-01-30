@@ -322,66 +322,64 @@ function Canvas() {
     
         // our ripples ping pong fbo
         const ripples = new PingPongPlane(curtains, document.getElementById("canvas"),{
-        vertexShader: ripplesVs,
-        fragmentShader: ripplesFs,
-        autoloadSources: false,
-        watchScroll: false,
-        sampler: "uRipples",
-        texturesOptions: {
-            floatingPoint: "half-float"
-        },
-        uniforms: {
-            mousePosition: {
-            name: "uMousePosition",
-            type: "2f",
-            value: mouse.current,
+            vertexShader: ripplesVs,
+            fragmentShader: ripplesFs,
+            autoloadSources: false,
+            watchScroll: false,
+            sampler: "uRipples",
+            texturesOptions: {
+                floatingPoint: "half-float"
             },
-            // our velocity
-            velocity: {
-            name: "uVelocity",
-            type: "2f",
-            value: mouse.velocity,
+            uniforms: {
+                mousePosition: {
+                name: "uMousePosition",
+                type: "2f",
+                value: mouse.current,
+                },
+                // our velocity
+                velocity: {
+                name: "uVelocity",
+                type: "2f",
+                value: mouse.velocity,
+                },
+                // window aspect ratio to draw a circle
+                resolution: {
+                name: "uResolution",
+                type: "2f",
+                value: new Vec2(curtainsBBox.width, curtainsBBox.height),
+                },
+                pixelRatio: {
+                name: "uPixelRatio",
+                type: "1f",
+                value: curtains.pixelRatio,
+                },
+                time: {
+                name: "uTime",
+                type: "1i",
+                value: -1,
+                },
+                viscosity: {
+                name: "uViscosity",
+                type: "1f",
+                value: 8,
+                },
+                speed: {
+                name: "uSpeed",
+                type: "1f",
+                value: 2,
+                },
+                size: {
+                name: "uSize",
+                type: "1f",
+                value: 4,
+                },
+                dissipation: {
+                name: "uDissipation",
+                type: "1f",
+                value: 0.9642,
+                }
             },
-            // window aspect ratio to draw a circle
-            resolution: {
-            name: "uResolution",
-            type: "2f",
-            value: new Vec2(curtainsBBox.width, curtainsBBox.height),
-            },
-            pixelRatio: {
-            name: "uPixelRatio",
-            type: "1f",
-            value: curtains.pixelRatio,
-            },
-            time: {
-            name: "uTime",
-            type: "1i",
-            value: -1,
-            },
-    
-            viscosity: {
-            name: "uViscosity",
-            type: "1f",
-            value: 10.75,
-            },
-            speed: {
-            name: "uSpeed",
-            type: "1f",
-            value: 6.75,
-            },
-            size: {
-            name: "uSize",
-            type: "1f",
-            value: 2,
-            },
-            dissipation: {
-            name: "uDissipation",
-            type: "1f",
-            value: 0.9875,
-            }
-        },
-        }
-                                        );
+        });
     
         ripples.onRender(() => {
         mouse.velocity.set(curtains.lerp(mouse.velocity.x, 0, 0.05), curtains.lerp(mouse.velocity.y, 0, 0.1));
@@ -395,13 +393,12 @@ function Canvas() {
         ripples.uniforms.resolution.value.set(boundingRect.width, boundingRect.height);
         });
     
-    
         // handle mouse move
         const onMouseMove = (e) => {
         if(ripples) {
             const mousePos = {
-            x: e.targetTouches ? e.targetTouches[0].clientX : e.clientX,
-            y: e.targetTouches ? e.targetTouches[0].clientY : e.clientY,
+                x: e.targetTouches ? e.targetTouches[0].clientX : e.clientX,
+                y: e.targetTouches ? e.targetTouches[0].clientY : e.clientY,
             };
     
             mouse.last.copy(mouse.current);
@@ -409,16 +406,16 @@ function Canvas() {
             mouse.updateVelocity = true;
     
             if(!mouse.lastTime) {
-            mouse.lastTime = (performance || Date).now();
+                mouse.lastTime = (performance || Date).now();
             }
     
             if(
-            mouse.last.x === 0
-            && mouse.last.y === 0
-            && mouse.current.x === 0
-            && mouse.current.y === 0
+                mouse.last.x === 0
+                && mouse.last.y === 0
+                && mouse.current.x === 0
+                && mouse.current.y === 0
             ) {
-            mouse.updateVelocity = false;
+                mouse.updateVelocity = false;
             }
     
             mouse.current.set(mousePos.x, mousePos.y);
@@ -428,14 +425,14 @@ function Canvas() {
     
             // divided by a frame duration (roughly)
             if(mouse.updateVelocity) {
-            const time = (performance || Date).now();
-            const delta = Math.max(14, time - mouse.lastTime);
-            mouse.lastTime = time;
-    
-            mouse.velocity.set(
-                (mouse.current.x - mouse.last.x) / delta,
-                (mouse.current.y - mouse.last.y) / delta
-            );
+                const time = (performance || Date).now();
+                const delta = Math.max(14, time - mouse.lastTime);
+                mouse.lastTime = time;
+        
+                mouse.velocity.set(
+                    (mouse.current.x - mouse.last.x) / delta,
+                    (mouse.current.y - mouse.last.y) / delta
+                );
             }
         }
         };
@@ -446,47 +443,47 @@ function Canvas() {
     
         // render pass (display the effect)
         const renderPassUniforms = {
-        resolution: {
-            name: "uResolution",
-            type: "2f",
-            value: new Vec2(curtainsBBox.width, curtainsBBox.height),
-        },
-        hue: {
-            name: "uHue",
-            type: "1f",
-            value: 16
-        },
-        saturation: {
-            name: "uSaturation",
-            type: "1f",
-            value: 1
-        },
-        bgColor: {
-            name: "uBgColor",
-            type: "3f",
-            value: [255, 255, 255]
-        },
+            resolution: {
+                name: "uResolution",
+                type: "2f",
+                value: new Vec2(curtainsBBox.width, curtainsBBox.height),
+            },
+            hue: {
+                name: "uHue",
+                type: "1f",
+                value: 16
+            },
+            saturation: {
+                name: "uSaturation",
+                type: "1f",
+                value: 1
+            },
+            bgColor: {
+                name: "uBgColor",
+                type: "3f",
+                value: [255, 255, 255]
+            },
         };
     
         const params = {
-        fragmentShader: renderFs,
-        depth: false,
-        uniforms: renderPassUniforms,
+            fragmentShader: renderFs,
+            depth: false,
+            uniforms: renderPassUniforms,
         };
     
         // post pro
         const renderPass = new ShaderPass(curtains, params);
     
         renderPass.onAfterResize(() => {
-        // update our window aspect ratio uniform
-        const boundingRect = renderPass.getBoundingRect();
-        renderPass.uniforms.resolution.value.set(boundingRect.width, boundingRect.height);
+            // update our window aspect ratio uniform
+            const boundingRect = renderPass.getBoundingRect();
+            renderPass.uniforms.resolution.value.set(boundingRect.width, boundingRect.height);
         });
     
         // add our ripple texture to the render pass
         renderPass.createTexture({
-        sampler: "uRipplesTexture",
-        fromTexture: ripples.getTexture()
+            sampler: "uRipplesTexture",
+            fromTexture: ripples.getTexture()
         });
     
         // GUI
@@ -494,26 +491,24 @@ function Canvas() {
     
         const guiHue = gui.add({hue: renderPass.uniforms.hue.value}, "hue", 0, Math.PI * 2, 0.01);
         guiHue.onChange((value) => {
-        renderPass.uniforms.hue.value = value;
+            renderPass.uniforms.hue.value = value;
         });
     
         const guiSaturation = gui.add({saturation: renderPass.uniforms.saturation.value}, "saturation", 0, 3, 0.0625);
         guiSaturation.onChange((value) => {
-        renderPass.uniforms.saturation.value = value;
+            renderPass.uniforms.saturation.value = value;
         });
     
-        const guiBgColor = gui.addColor(
-        {
+        const guiBgColor = gui.addColor({
             bgColor: {
-            r: renderPass.uniforms.bgColor.value[0],
-            g: renderPass.uniforms.bgColor.value[1],
-            b: renderPass.uniforms.bgColor.value[2]
+                r: renderPass.uniforms.bgColor.value[0],
+                g: renderPass.uniforms.bgColor.value[1],
+                b: renderPass.uniforms.bgColor.value[2]
             }
-        },
-        "bgColor"
-        );
+        },"bgColor");
+
         guiBgColor.onChange((value) => {
-        renderPass.uniforms.bgColor.value = [value.r, value.g, value.b];
+            renderPass.uniforms.bgColor.value = [value.r, value.g, value.b];
         });
     });
     });

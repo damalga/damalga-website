@@ -32,7 +32,7 @@ function Column2() {
           <h4>SKILLS</h4>
           <div className='on-off'>
             <h5>Print & Digital</h5>
-            <p>I have many useful references and resources to transmit the values of a brand and graphically capture them into online and offline media... In my <a className='link' href='https://www.behance.net/damalga'>Behance</a> account you can find some of the work that I have most enjoyed to date.</p>
+            <p>I have many useful references and resources to transmit the values of a brand and graphically capture them into online and offline media... In my <a className='link' href='https://www.behance.net/damalga' target="_blank">Behance</a> account you can find some of the work that I have most enjoyed to date.</p>
           </div>
           <div className='front-end'>
             <h5>Front-end web tools</h5>
@@ -44,7 +44,7 @@ function Column2() {
               </div>
               <div className='node'>
                 <img src={nodee} alt="node" />
-                <p className='text'>Mid level in Javascript, super into creative visual libraries and I’m super interested in any new in the node.js ecosystem.</p>
+                <p className='text'>Mid level in Javascript, super into creative visual libraries like GSAP and I’m super interested in any new in the node.js environment.</p>
                 <p className='level'>**</p>
               </div>
               <div className='git'>
@@ -52,7 +52,8 @@ function Column2() {
                 <p className='text'><del> Low level </del> Begineer in...<br></br>
                 Ignorant of everthing.<br></br>
                 Full coding energy.<br></br>
-                <a className='link' href="https://github.com/damalga">Github</a>, <a className='link' href="https://bitbucket.org/damalga/">Bitbucket</a> & <a className='link' href="https://stackoverflow.com/users/9181614/damalga">Stack</a>...</p>
+                <a className='link' href="https://github.com/damalga"  target="_blank">Github</a>, <a className='link' href="https://bitbucket.org/damalga/"  target="_blank">Bitbucket</a> & <br></br>
+                <a className='link' href="https://stackoverflow.com/users/9181614/damalga"  target="_blank">Stackoverflow</a>...</p>
                 <p className='level'>*</p>
               </div>
             </div>
