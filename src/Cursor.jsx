@@ -88,7 +88,7 @@ function Cursor() {
 
     function handleMouseEnter(e) {
         gsap.to(cursorInner, 0.15, {
-            scale: 2,
+            scale: 2
         });
     }
 
