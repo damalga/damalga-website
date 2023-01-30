@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Column1 from './Column1'
 import Column2 from './Column2'
 import Column3 from './Column3'

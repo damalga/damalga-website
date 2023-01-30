@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import gsap from 'gsap';
 
 import Cursor from './Cursor'
 import Canvas from './Canvas'

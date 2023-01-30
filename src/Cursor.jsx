@@ -1,5 +1,5 @@
 function Cursor() {
-
+    
     const { gsap } = window;
     
     const cursorOuter = document.querySelector(".cursor--large");
