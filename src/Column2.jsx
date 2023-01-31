@@ -57,7 +57,7 @@ function Column2() {
                 <p className='level'>*</p>
               </div>
             </div>
-            <p className='extra-info'>Countless experiences as front-end developer in projects built on Ruby on Rails, Symfony, React... and many CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM.</p>
+            <p className='extra-info'>Countless experiences as front-end developer in projects built on Ruby on Rails, Symfony, React... and CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM. </p>
           </div>
         </div>
 

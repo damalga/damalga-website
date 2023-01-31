@@ -4,9 +4,9 @@ import id from './assets/svgs/id.svg'
 import pr from './assets/svgs/pr.svg'
 import ae from './assets/svgs/ae.svg'
 import live from './assets/svgs/live.svg'
-import musiccinema from './assets/svgs/music-cinema.svg'
-import scitec from './assets/svgs/sci-tec.svg'
-import tripsliterature from './assets/svgs/trips-literature.svg'
+import int1 from './assets/svgs/int1.svg'
+import int2 from './assets/svgs/int2.svg'
+import int3 from './assets/svgs/int3.svg'
 
 function Column3() {
 
@@ -64,17 +64,17 @@ function Column3() {
         <div className='interests topic'>
           <h4>INTERESTS</h4>
           <div className='points'>
-            <div className='music-cinema interest'>
-              <img src={musiccinema} className="music-cinema-img" alt="music and cinema"/>
-              <p>Music, cinema & digital arts</p>
+            <div className='mus-film interest'>
+              <img src={int1} className="int1" alt="music, films and digital arts"/>
+              <p>Music, cinema<br></br>& digital arts</p>
             </div>
             <div className='sci-tec interest'>
-              <img src={scitec} className="sci-tec-img" alt="science and technology"/>
-              <p>Science, Nature & Technology</p>
+              <img src={int2} className="int2" alt="science, nature and technology"/>
+              <p>Science, Nature<br></br>& Technology</p>
             </div>
-            <div className='trips-literature interest'>
-              <img src={tripsliterature} className="trips-literature-img" alt="trips and literature"/>
-              <p>Trips, vehicles & narratives</p>
+            <div className='trips-narr interest'>
+              <img src={int3} className="int3" alt="trips, vehicles and narratives"/>
+              <p>Trips, vehicles<br></br>& narratives</p>
             </div>
           </div>
         </div>

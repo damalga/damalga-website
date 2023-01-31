@@ -29,7 +29,7 @@
     }
     .col-1 {
         .face {
-            margin: 0 30% 5% 0;
+            margin: 0 35% 5% 0;
         }
         .edu,
         .work {
@@ -181,12 +181,14 @@
             .points {
                 display: flex;
                 align-items: flex-end;
+                justify-content: space-between;
                 .interest {
                     text-align: center;
                     img {
                         width: 48px;
                     }
                     p {
+                        font-size: .8em;
                         line-height: 1.2em;
                     }
                 }
