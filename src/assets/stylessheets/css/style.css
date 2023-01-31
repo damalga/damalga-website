@@ -170,18 +170,17 @@ p {
   line-height: 24px;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(0, 0, 0, 0.9);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   padding: 1em;
-  max-width: 1080px;
-  margin: 0 auto;
+  width: 1080px;
   z-index: 2;
   position: absolute;
-  right: calc(50% - 540px);
+  left: 50%;
+  transform: translate(-50%);
 }
 
 ::selection {
@@ -291,7 +290,7 @@ section.second .name h3 {
   line-height: 1.4em;
 }
 .resume .col-1 .face {
-  margin: 0 35% 5% 0;
+  padding: 0 35% 5% 0;
 }
 .resume .col-1 .edu .school,
 .resume .col-1 .edu .job,
@@ -451,25 +450,33 @@ section.second .name h3 {
   line-height: 1em;
 }
 
-@media only screen and (max-width: 720px) {
-  .cursor {
-    visibility: hidden;
-  }
-  header section.hello {
-    vertical-align: bottom;
-  }
-  .resume section[class^=col-] {
+@media only screen and (max-width: 1020px) {
+  #portfolio {
     width: 100%;
   }
-  .resume .col-1 .face {
+  #portfolio .resume .col-1 .face {
+    padding: 0 20% 7% 0;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #portfolio .cursor {
+    visibility: hidden;
+  }
+  #portfolio header section.hello {
+    vertical-align: bottom;
+  }
+  #portfolio .resume section[class^=col-] {
+    width: 100%;
+  }
+  #portfolio .resume .col-1 .face {
     margin: auto;
     padding: 0 4.8em 2.4em;
   }
-  .resume .col-2 {
+  #portfolio .resume .col-2 {
     border: 0;
   }
-  .resume .col-3 .topic .level,
-  .resume .col-3 .topic .points {
+  #portfolio .resume .col-3 .topic .level,
+  #portfolio .resume .col-3 .topic .points {
     justify-content: space-around;
   }
 }

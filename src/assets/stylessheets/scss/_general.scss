@@ -13,18 +13,17 @@
     line-height: 24px;
     font-weight: 400;
     color-scheme: light dark;
-    color: rgba(0, 0, 0, 0.9);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     padding: 1em;
-    max-width: 1080px;
-    margin: 0 auto;
+    width: 1080px;
     z-index: 2;
     position: absolute;
-    right: calc(50% - 540px);
+    left: 50%;
+    transform: translate(-50%);
 }
 
 ::selection {

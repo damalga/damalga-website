@@ -30,7 +30,7 @@ function Cursor() {
     document.body.addEventListener("pointermove", updateCursorPosition);
     document.body.addEventListener("pointerdown", () => {
         gsap.to(cursorInner, 0.15, {
-            scale: 2,
+            scale: 2
         });
     });
     document.body.addEventListener("pointerup", () => {
@@ -64,37 +64,24 @@ function Cursor() {
     updateCursor();
     
     // modify cursorOuter to area
-
-    // function handleMouseEnter(e) {
-    //     isStuck = true;
-    //     const targetBox = e.currentTarget.getBoundingClientRect();
-    //     gsap.to(cursorOuter, 0.2, {
-    //         x: targetBox.left, 
-    //         y: targetBox.top + scrollHeight,
-    //         width: targetBox.width,
-    //         height: targetBox.height,
-    //         borderRadius: 0
-    //     });
-    // }
-    
-    // function handleMouseLeave(e) {
-    //     isStuck = false;
-    //     gsap.to(cursorOuter, 0.2, {
-    //         width: cursorOuterOriginalState.width,
-    //         height: cursorOuterOriginalState.width,
-    //         borderRadius: "50%",
-    //     });
-    // }
-
     function handleMouseEnter(e) {
-        gsap.to(cursorInner, 0.15, {
-            scale: 2
+        isStuck = true;
+        const targetBox = e.currentTarget.getBoundingClientRect();
+        gsap.to(cursorOuter, 0.2, {
+            x: targetBox.left, 
+            y: targetBox.top + scrollHeight,
+            width: targetBox.width,
+            height: targetBox.height,
+            borderRadius: 0
         });
     }
-
+    
     function handleMouseLeave(e) {
-        gsap.to(cursorInner, 0.15, {
-            scale: 1
+        isStuck = false;
+        gsap.to(cursorOuter, 0.2, {
+            width: cursorOuterOriginalState.width,
+            height: cursorOuterOriginalState.width,
+            borderRadius: "50%"
         });
     }
 
