@@ -39,7 +39,7 @@ function Column2() {
             <div className='front-end-icons'>
               <div className='css'>
                 <img src={css} alt="bootstrap" />
-                <p className='text'>Advanced knowledge in HTML, CSS, Sass, grid-layout, flex-box and any kind of stylesheets based library.</p>
+                <p className='text'>Advanced knowledge in HTML, CSS, Sass, grid-layout, flex-box and any kind of stylesheets<br></br>based library.</p>
                 <p className='level'>***</p>
               </div>
               <div className='node'>
@@ -57,7 +57,7 @@ function Column2() {
                 <p className='level'>*</p>
               </div>
             </div>
-            <p className='extra-info'>Countless experiences as front-end developer in projects built on Ruby on Rails, Symfony, React... and CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM. </p>
+            <p className='extra-info'>Countless experiences as front-end developer in projects built on Ruby on Rails, Symfony, React... <br></br>and CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM. </p>
           </div>
         </div>
 

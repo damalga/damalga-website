@@ -11,17 +11,33 @@
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 760px) {
+    .cursor {
+        visibility: hidden;
+    }
     #portfolio {
-        //rwd-cursor
-        .cursor {
-            visibility: hidden;
-        }
         //rwd-header
         header {
-            section {
-                &.hello {
-                    vertical-align: bottom;
+            section.first {
+                margin-bottom: 0;
+                .hello,
+                .intro {
+                    width: 100%;
+                }
+                .hello {
+                    padding: 0 4.8em 2.4em;
+                }
+                .intro {
+                    border-top: .05em solid $black;
+                    border-left: 0;
+                    padding: 2em 1em;
+                }
+            }
+            section.second {
+                .name {
+                    margin: 0;
+                    text-align-last: center;
+                    text-align: center;
                 }
             }
         }
@@ -52,11 +68,18 @@
 }
 
 @media only screen and (max-width: 560px) {
-    .resume {
-        .col-1 {
-            .face {
-                padding: 0 2.4em 1.2em;
+    #portfolio {
+        .resume {
+            .col-1 {
+                .face {
+                    padding: 0 2.4em 1.2em;
+                }
             }
+        }
+    }
+    footer {
+        .bye {
+            text-align-last: center;
         }
     }
 }

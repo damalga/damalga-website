@@ -33,7 +33,7 @@ function Column1() {
           <h4>WORK EXPERIENCE</h4>
           <div className='cheil job'>
             <img src={cheil} alt="cheil logo" />
-            <p>Digital Graphic Designer,<br></br> <b>Cheil Spain</b>.<br></br> (2020 - Currently).</p>
+            <p>Digital Graphic Designer,<br></br> <b>Cheil Spain</b>.<br></br> (2020 - 2022).</p>
           </div>
           <div className='amaris job'>
             <img src={amaris} alt="amaris logo" />

@@ -30,7 +30,7 @@ function Cursor() {
     document.body.addEventListener("pointermove", updateCursorPosition);
     document.body.addEventListener("pointerdown", () => {
         gsap.to(cursorInner, 0.15, {
-            scale: 2
+            scale: 2,
         });
     });
     document.body.addEventListener("pointerup", () => {

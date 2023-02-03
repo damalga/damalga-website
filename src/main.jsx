@@ -5,6 +5,7 @@ import Cursor from './Cursor'
 import Canvas from './Canvas'
 import Header from './Header'
 import Resume from './Resume'
+import Footer from './Footer'
 
 import './assets/stylessheets/css/style.css'
 
@@ -14,5 +15,6 @@ ReactDOM.createRoot(document.getElementById('portfolio')).render(
     <Canvas />
     <Header />
     <Resume />
+    <Footer />
   </React.StrictMode>
 )

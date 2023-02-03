@@ -222,10 +222,10 @@ a {
 }
 
 header {
-  padding: 1em;
+  padding: 1.2em;
 }
 header div {
-  padding: 1em;
+  padding: 1.2em;
 }
 header section.first {
   margin-bottom: 2em;
@@ -249,7 +249,6 @@ header section.first .intro {
 section.second .name {
   margin: 1em 0;
   text-align-last: justify;
-  letter-spacing: 0.1em;
   border-top: 0.05em solid #000;
   border-bottom: 0.05em solid #000;
 }
@@ -325,35 +324,33 @@ section.second .name h3 {
 .resume .col-2 .skills .front-end {
   margin-bottom: 1em;
 }
-.resume .col-2 .skills .front-end .front-end-icons {
-  align-items: flex-end;
-}
 .resume .col-2 .skills .front-end .front-end-icons .css,
 .resume .col-2 .skills .front-end .front-end-icons .node,
 .resume .col-2 .skills .front-end .front-end-icons .git {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.8em;
+  overflow: hidden;
 }
 .resume .col-2 .skills .front-end .front-end-icons img,
 .resume .col-2 .skills .front-end .front-end-icons .level {
-  width: 56px;
+  width: 20%;
 }
 .resume .col-2 .skills .front-end .front-end-icons img {
-  padding-top: 0.5em;
+  padding-top: 0.6em;
 }
 .resume .col-2 .skills .front-end .front-end-icons .level {
   font-size: 1.6em;
   text-align: center;
   color: #444;
-  padding-top: 0.25em;
+  padding-top: 0.3em;
   display: inline-block;
 }
 .resume .col-2 .skills .front-end .front-end-icons .level span {
   font-size: 0.8em;
 }
 .resume .col-2 .skills .front-end .front-end-icons .text {
-  width: 75%;
+  width: 80%;
+  padding: 0 0.8em;
   float: right;
-  line-height: 1.4em;
 }
 .resume .col-3 .soft-skills .bar,
 .resume .col-3 .soft-skills .pro-bar {
@@ -427,6 +424,7 @@ section.second .name h3 {
   font-weight: 500;
   font-size: 0.8em;
   line-height: 1.2em;
+  margin-top: 0.3em;
 }
 .resume .col-3 .interests .points {
   display: flex;
@@ -450,6 +448,18 @@ section.second .name h3 {
   line-height: 1em;
 }
 
+footer .bye {
+  margin: 1.2em 0;
+  padding: 1.2em;
+  text-align-last: justify;
+  border-top: 0.05em solid #000;
+  border-bottom: 0.05em solid #000;
+}
+footer .bye h3 {
+  font-size: small;
+  margin-bottom: 0;
+}
+
 @media only screen and (max-width: 1020px) {
   #portfolio {
     width: 100%;
@@ -458,12 +468,29 @@ section.second .name h3 {
     padding: 0 20% 7% 0;
   }
 }
-@media only screen and (max-width: 720px) {
-  #portfolio .cursor {
+@media only screen and (max-width: 760px) {
+  .cursor {
     visibility: hidden;
   }
-  #portfolio header section.hello {
-    vertical-align: bottom;
+  #portfolio header section.first {
+    margin-bottom: 0;
+  }
+  #portfolio header section.first .hello,
+  #portfolio header section.first .intro {
+    width: 100%;
+  }
+  #portfolio header section.first .hello {
+    padding: 0 4.8em 2.4em;
+  }
+  #portfolio header section.first .intro {
+    border-top: 0.05em solid #000000;
+    border-left: 0;
+    padding: 2em 1em;
+  }
+  #portfolio header section.second .name {
+    margin: 0;
+    text-align-last: center;
+    text-align: center;
   }
   #portfolio .resume section[class^=col-] {
     width: 100%;
@@ -481,8 +508,11 @@ section.second .name h3 {
   }
 }
 @media only screen and (max-width: 560px) {
-  .resume .col-1 .face {
+  #portfolio .resume .col-1 .face {
     padding: 0 2.4em 1.2em;
+  }
+  footer .bye {
+    text-align-last: center;
   }
 }
 
