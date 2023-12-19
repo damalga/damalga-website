@@ -44,7 +44,7 @@ function Column2() {
               </div>
               <div className='node'>
                 <img src={nodee} alt="node" />
-                <p className='text'>Mid level in Javascript, super into creative visual libraries like GSAP and I’m super interested in any new in the node.js environment.</p>
+                <p className='text'>Mid level in Javascript, jQuery and I'm super into creative visual libraries like GSAP and I’m super interested in any new in the node.js environment.</p>
                 <p className='level'>**</p>
               </div>
               <div className='git'>

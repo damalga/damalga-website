@@ -1,4 +1,5 @@
 import face from './assets/svgs/face.svg'
+import vocento from './assets/svgs/vocento.svg'
 import cheil from './assets/svgs/cheil.svg'
 import amaris from './assets/svgs/amaris.svg'
 import nateevo from './assets/svgs/nateevo.svg'
@@ -15,7 +16,7 @@ function Column1() {
           <h4>EDUCATION</h4>
           <div className='course school'>
             <p><b>50h on-site course</b> in Javascript.<br></br>
-            Asociación Española de <br></br>Programadores Informáticos<br></br>[2019 - 2 months].
+            Asociación Española de <br></br>Programadores Informáticos<br></br>[2019 - 2 months]
             </p>
           </div>
           <div className='master school'>
@@ -25,12 +26,16 @@ function Column1() {
             <p><b>Graphic Design Degree</b> in the <b>Escuela Superior de Diseño de Madrid</b> (ESDM).<br></br>[2012 --- 2017]</p>
           </div>
           <div className='erasmus school'>
-            <p><b>Erasmus+</b> in <b>Aalto University</b> school of arts, design and achitecture (Finland).<br></br> [2015 -- 2nd semester]</p>
+            <p><b>Erasmus+</b> in <b>Aalto University</b> school of arts, design and achitecture (Finland).<br></br> [2015 -- 5 months (1st semester)]</p>
           </div>
         </div>
 
         <div className='work topic'>
           <h4>WORK EXPERIENCE</h4>
+          <div className='vocento job'>
+            <img src={vocento} alt="vocento logo" />
+            <p>Web designer (Front-end),<br></br> <b>Vocento</b>.<br></br> (2023 - current).</p>
+          </div>
           <div className='cheil job'>
             <img src={cheil} alt="cheil logo" />
             <p>Digital Graphic Designer,<br></br> <b>Cheil Spain</b>.<br></br> (2020 - 2022).</p>

@@ -327,7 +327,8 @@ section.second .name h3 {
 .resume .col-2 .skills .front-end .front-end-icons .css,
 .resume .col-2 .skills .front-end .front-end-icons .node,
 .resume .col-2 .skills .front-end .front-end-icons .git {
-  margin-bottom: 0.8em;
+  display: flex;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 .resume .col-2 .skills .front-end .front-end-icons img,
@@ -341,7 +342,7 @@ section.second .name h3 {
   font-size: 1.6em;
   text-align: center;
   color: #444;
-  padding-top: 0.3em;
+  padding-top: 0.2em;
   display: inline-block;
 }
 .resume .col-2 .skills .front-end .front-end-icons .level span {
@@ -349,8 +350,7 @@ section.second .name h3 {
 }
 .resume .col-2 .skills .front-end .front-end-icons .text {
   width: 80%;
-  padding: 0 0.8em;
-  float: right;
+  padding: 1.2em 0.8em 0 0.8em;
 }
 .resume .col-3 .soft-skills .bar,
 .resume .col-3 .soft-skills .pro-bar {
