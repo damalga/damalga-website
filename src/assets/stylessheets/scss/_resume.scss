@@ -4,9 +4,9 @@
     section[class^='col-'] {
         width: 33.33%;
         padding: 1.2em;
-        .topic {
-            margin-bottom: 1.6em;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     .bold,
     .link {
@@ -22,14 +22,14 @@
         font-size: .8em;
         font-style: italic;
         line-height: 1.4em;
-        margin-bottom: 1em;
     }
     p {
         line-height: 1.4em;
+        
     }
     .col-1 {
         .face {
-            padding: 0 35% 5% 0;
+            margin-bottom: 1.6em;
         }
         .edu,
         .work {
@@ -38,11 +38,17 @@
                 display: flex;
                 align-items: center;
                 margin: 1.2em 0;
+                &:last-child{
+                    margin-bottom: .4em;
+                }
                 img {
                     width: 20%;
                     margin-right: .8em;
                 }
             }
+        }
+        .edu{
+            margin-bottom: 1.6em;
         }
     }
     .col-2 {
@@ -50,6 +56,7 @@
         border-right: .05em solid #000;
         border-left: .05em solid #000;
         .projects {
+            margin-bottom: 1.6rem;
             .project {
                 display: flex;
                 align-items: center;
@@ -66,6 +73,7 @@
                 margin-bottom: 1em;
             }
             .front-end {
+                margin-bottom: 0;
                 .front-end-icons {
                     .css,
                     .node,
@@ -100,6 +108,9 @@
         }
     }
     .col-3 {
+        h5{
+            margin-bottom: 0;
+        }
         .soft-skills {
             .bar,
             .pro-bar {
@@ -153,12 +164,19 @@
                     width: 52%;
                 }
                 .label-soft-skill {
-                    float: right;
-                    font-size: .8em;
+                    width: 100%;
+                    display: block;
                     bottom: .8em;
+                    font-size: .8em;
                     font-style: italic;
+                    text-align: right;
                 }
             }
+        }
+        .langs,
+        .interests,
+        .contact{
+            margin-bottom: 1.6rem;
         }
         .langs {
             .level {
@@ -203,6 +221,21 @@
                         line-height: 1em;
                     }
                 }
+            }
+        }
+        .bye{
+            h4{
+                font-size: 2em;
+            }
+            p{
+                .opensource{
+                    font-size: .7em;
+                }
+            }
+            h6{
+                text-align: right;
+                margin-bottom: 0;
+                font-style: italic;
             }
         }
     }

@@ -1,21 +1,18 @@
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
     #portfolio {
         width: 100%;
-        .resume {
-            .col-1 {
-                .face {
-                    padding: 0 20% 7% 0;
-                }
-            }
-        }
     }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     .cursor {
         visibility: hidden;
     }
     #portfolio {
+        header,
+        section[class^='col-'] {
+            padding: .6em;
+        }
         //rwd-header
         header {
             section.first {
@@ -48,8 +45,7 @@
             }
             .col-1 {
                 .face {
-                    margin: auto;
-                    padding: 0 4.8em 2.4em;
+                    width: 80%;
                 }
             }
             .col-2 {
@@ -62,21 +58,13 @@
                         justify-content: space-around;
                     }
                 }
+                
             }
         }
     }
 }
 
 @media only screen and (max-width: 560px) {
-    #portfolio {
-        .resume {
-            .col-1 {
-                .face {
-                    padding: 0 0 1.2em;
-                }
-            }
-        }
-    }
     footer {
         .bye {
             text-align-last: center;

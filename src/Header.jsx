@@ -12,7 +12,7 @@ function Header() {
         </div>
         <div className='intro'>
           <h2>WHO I AM</h2>
-          <p>Hello, I'm Damian, hailing from Madrid, Spain. I have a deep affinity for crafting simple and functional designs, with a penchant for removing the unnecessary to produce smart code and clean aesthetics. My commitment to honing my design and development skills is well ingrained, and I thrive on embracing new creative experiences.</p>
+          <p>I'm Damalga aka Damian or just Dami. Hailing from Madrid (Spain). Now I'm Asturias based (north of Spain). I have a deep affinity for crafting simple and functional designs, with a penchant for removing the unnecessary to produce smart code and clean aesthetics. My commitment to honing my design and development skills is well ingrained and I thrive on embracing new creative and audiovisual experiences.</p>
         </div>
       </section>
       <section className='second'>

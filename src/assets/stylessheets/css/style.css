@@ -245,6 +245,10 @@ header section.first .intro {
   width: 66.66%;
   border-left: 0.05em solid #000000;
 }
+header section.first .intro p {
+  font-size: 0.92em;
+  line-height: 1.6em;
+}
 
 section.second .name {
   margin: 1em 0;
@@ -264,9 +268,9 @@ section.second .name h3 {
 .resume section[class^=col-] {
   width: 33.33%;
   padding: 1.2em;
-}
-.resume section[class^=col-] .topic {
-  margin-bottom: 1.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .resume .bold,
 .resume .link {
@@ -283,13 +287,12 @@ section.second .name h3 {
   font-size: 0.8em;
   font-style: italic;
   line-height: 1.4em;
-  margin-bottom: 1em;
 }
 .resume p {
   line-height: 1.4em;
 }
 .resume .col-1 .face {
-  padding: 0 35% 5% 0;
+  margin-bottom: 1.6em;
 }
 .resume .col-1 .edu .school,
 .resume .col-1 .edu .job,
@@ -299,6 +302,12 @@ section.second .name h3 {
   align-items: center;
   margin: 1.2em 0;
 }
+.resume .col-1 .edu .school:last-child,
+.resume .col-1 .edu .job:last-child,
+.resume .col-1 .work .school:last-child,
+.resume .col-1 .work .job:last-child {
+  margin-bottom: 0.4em;
+}
 .resume .col-1 .edu .school img,
 .resume .col-1 .edu .job img,
 .resume .col-1 .work .school img,
@@ -306,10 +315,16 @@ section.second .name h3 {
   width: 20%;
   margin-right: 0.8em;
 }
+.resume .col-1 .edu {
+  margin-bottom: 1.6em;
+}
 .resume .col-2 {
   flex-direction: column;
   border-right: 0.05em solid #000;
   border-left: 0.05em solid #000;
+}
+.resume .col-2 .projects {
+  margin-bottom: 1.6rem;
 }
 .resume .col-2 .projects .project {
   display: flex;
@@ -323,6 +338,9 @@ section.second .name h3 {
 .resume .col-2 .skills .on-off,
 .resume .col-2 .skills .front-end {
   margin-bottom: 1em;
+}
+.resume .col-2 .skills .front-end {
+  margin-bottom: 0;
 }
 .resume .col-2 .skills .front-end .front-end-icons .css,
 .resume .col-2 .skills .front-end .front-end-icons .node,
@@ -351,6 +369,9 @@ section.second .name h3 {
 .resume .col-2 .skills .front-end .front-end-icons .text {
   width: 80%;
   padding: 1.2em 0.8em 0 0.8em;
+}
+.resume .col-3 h5 {
+  margin-bottom: 0;
 }
 .resume .col-3 .soft-skills .bar,
 .resume .col-3 .soft-skills .pro-bar {
@@ -405,10 +426,17 @@ section.second .name h3 {
   width: 52%;
 }
 .resume .col-3 .soft-skills .soft-skill .label-soft-skill {
-  float: right;
-  font-size: 0.8em;
+  width: 100%;
+  display: block;
   bottom: 0.8em;
+  font-size: 0.8em;
   font-style: italic;
+  text-align: right;
+}
+.resume .col-3 .langs,
+.resume .col-3 .interests,
+.resume .col-3 .contact {
+  margin-bottom: 1.6rem;
 }
 .resume .col-3 .langs .level {
   display: flex;
@@ -447,6 +475,17 @@ section.second .name h3 {
 .resume .col-3 .contact .points .point p {
   line-height: 1em;
 }
+.resume .col-3 .bye h4 {
+  font-size: 2em;
+}
+.resume .col-3 .bye p .opensource {
+  font-size: 0.7em;
+}
+.resume .col-3 .bye h6 {
+  text-align: right;
+  margin-bottom: 0;
+  font-style: italic;
+}
 
 footer .bye {
   margin: 1.2em 0;
@@ -460,17 +499,18 @@ footer .bye h3 {
   margin-bottom: 0;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   #portfolio {
     width: 100%;
   }
-  #portfolio .resume .col-1 .face {
-    padding: 0 20% 7% 0;
-  }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   .cursor {
     visibility: hidden;
+  }
+  #portfolio header,
+  #portfolio section[class^=col-] {
+    padding: 0.6em;
   }
   #portfolio header section.first {
     margin-bottom: 0;
@@ -496,8 +536,7 @@ footer .bye h3 {
     width: 100%;
   }
   #portfolio .resume .col-1 .face {
-    margin: auto;
-    padding: 0 4.8em 2.4em;
+    width: 80%;
   }
   #portfolio .resume .col-2 {
     border: 0;
@@ -508,9 +547,6 @@ footer .bye h3 {
   }
 }
 @media only screen and (max-width: 560px) {
-  #portfolio .resume .col-1 .face {
-    padding: 0 0 1.2em;
-  }
   footer .bye {
     text-align-last: center;
   }

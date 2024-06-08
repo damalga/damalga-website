@@ -49,7 +49,7 @@ function Column3() {
           <div className='soft-skill'>
             <img src={live} alt="ableton live logo" />
             <div className='bar live-bar'></div><div className='pro-bar live-pro-bar'></div>
-            <p className='label-soft-skill pr'>Ableton</p>
+            <p className='label-soft-skill ab'>Ableton</p>
           </div>
         </div>
 
@@ -88,6 +88,12 @@ function Column3() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className='bye topic'>
+          <h4>BYE!</h4>
+          <p>... and have a nice <span className='opensource'> opensource </span> day.</p>
+          <h6>Damian</h6>
         </div>
 
       </section>

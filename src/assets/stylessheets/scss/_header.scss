@@ -19,6 +19,10 @@ header {
         .intro {
             width: 66.66%;
             border-left: .05em solid $black;
+            p{
+                font-size: .92em;
+                line-height: 1.6em;
+            }
         }
     }
 }
