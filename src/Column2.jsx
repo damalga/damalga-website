@@ -32,7 +32,7 @@ function Column2() {
           <h4>SKILLS</h4>
           <div className='on-off'>
             <h5>Print & Digital</h5>
-            <p>I have many useful references and resources to transmit the values of a brand and graphically capture them into online and offline media... In my <a className='link' href='https://www.behance.net/damalga' target="_blank">Behance</a> account you can find some of the work that I have most enjoyed along my graphics design design studies.</p>
+            <p>I have many useful references and resources to transmit the values of a brand and graphically capture them into online and offline media... In my <a className='link' href='https://www.behance.net/damalga' target="_blank">Behance</a> account you can find some of the work that I have most enjoyed along my graphic design studies.</p>
           </div>
           <div className='front-end'>
             <h5>Front-end web tools</h5>

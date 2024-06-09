@@ -400,6 +400,9 @@ section.second .name h3 {
   position: relative;
   top: 1.635em;
 }
+.resume .col-3 .soft-skills .soft-skill img.ae {
+  top: 1.64em;
+}
 .resume .col-3 .soft-skills .soft-skill .bar,
 .resume .col-3 .soft-skills .soft-skill .pro-bar {
   left: 15%;
