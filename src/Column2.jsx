@@ -49,7 +49,7 @@ function Column2() {
               </div>
               <div className='git'>
                 <img src={git} alt="git" />
-                <p className='text'><del> Low level </del> Begineer in...<br></br>
+                <p className='text'><del>Low level</del> Begineer in...<br></br>
                 Ignorant of everthing.<br></br>
                 Full coding energy.<br></br>
                 <a className='link' href="https://github.com/damalga"  target="_blank">Github</a>, <a className='link' href="https://bitbucket.org/damalga/"  target="_blank">Bitbucket</a> & <br></br>
