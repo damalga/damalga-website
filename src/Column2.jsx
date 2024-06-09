@@ -58,7 +58,7 @@ function Column2() {
               </div>
             </div>
             <p className='extra-info'>Countless experiences as front-end developer in projects builds on Ruby on Rails, Symfony, React... and CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM... Or With tools like Gulp, Webpack or Handlebars. I'm especially into any node and npm idea to develop anything.<br></br><br></br>
-            Oh! and I'm definitely not bad on the terminal, neither linux, ubuntu or managing virtual machines with debian distribution images.</p>
+            Oh! and I'm definitely not bad on the terminal, neither linux, ubuntu or managing virtual machines with debian distribution images or windows.</p>
           </div>
         </div>
 
