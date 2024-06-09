@@ -147,7 +147,7 @@ h5 {
 }
 
 h6 {
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-bottom: 0.4em;
 }
 
@@ -286,12 +286,13 @@ section.second .name h3 {
 .resume .extra-info {
   font-size: 0.8em;
   font-style: italic;
-  line-height: 1.4em;
+  line-height: 1.2em;
 }
 .resume p {
   line-height: 1.4em;
 }
 .resume .col-1 .face {
+  width: 82%;
   margin-bottom: 1.6em;
 }
 .resume .col-1 .edu .school,
@@ -317,6 +318,9 @@ section.second .name h3 {
 }
 .resume .col-1 .edu {
   margin-bottom: 1.6em;
+}
+.resume .col-1 .edu .start {
+  text-align: right;
 }
 .resume .col-2 {
   flex-direction: column;

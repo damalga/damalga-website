@@ -39,7 +39,7 @@ function Column2() {
             <div className='front-end-icons'>
               <div className='css'>
                 <img src={css} alt="bootstrap" />
-                <p className='text'>Advanced knowledge in HTML, CSS... Solid knowledge with Sass, grid-layout, flex-box and any kind of stylesheets based library. I'm good setting properly anything on the screen.</p>
+                <p className='text'>Advanced knowledge in HTML, CSS... Solid knowledge with <a className='link' href="https://sass-lang.com/"  target="_blank">Sass</a>, grid-layout, flex-box and any kind of stylesheets based library. I'm good setting properly anything on the screen.</p>
                 <p className='level'>***</p>
               </div>
               <div className='node'>
@@ -57,7 +57,7 @@ function Column2() {
                 <p className='level'>*</p>
               </div>
             </div>
-            <p className='extra-info'>Countless experiences as front-end developer in projects builds on Ruby on Rails, Symfony, React... and CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM... O Con herramientas como Gulp, Webpack or Handlebars. I'm specially into any node and npm idea develop anything.<br></br><br></br>
+            <p className='extra-info'>Countless experiences as front-end developer in projects builds on Ruby on Rails, Symfony, React... and CMS’s like Liferay, Drupal, Magnolia, Wordpress and AEM... Or With tools like Gulp, Webpack or Handlebars. I'm especially into any node and npm idea to develop anything.<br></br><br></br>
             Oh! and I'm definitely not bad on the terminal, neither linux, ubuntu or managing virtual machines with debian distribution images.</p>
           </div>
         </div>

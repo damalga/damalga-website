@@ -21,7 +21,7 @@
     .extra-info {
         font-size: .8em;
         font-style: italic;
-        line-height: 1.4em;
+        line-height: 1.2em;
     }
     p {
         line-height: 1.4em;
@@ -29,6 +29,7 @@
     }
     .col-1 {
         .face {
+            width: 82%;
             margin-bottom: 1.6em;
         }
         .edu,
@@ -49,6 +50,9 @@
         }
         .edu{
             margin-bottom: 1.6em;
+            .start{
+                text-align: right;
+            }
         }
     }
     .col-2 {

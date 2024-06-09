@@ -92,8 +92,8 @@ function Column3() {
 
         <div className='bye topic'>
           <h4>BYE!</h4>
-          <p>... and have a nice <span className='opensource'> opensource </span> day.</p>
-          <h6>Damian</h6>
+          <p>... and have a nice <span className='opensource'> opensource^^</span> day.</p>
+          <h6>Damian;</h6>
         </div>
 
       </section>

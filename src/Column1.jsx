@@ -14,19 +14,25 @@ function Column1() {
 
         <div className='edu topic'>
           <h4>EDUCATION</h4>
-          <div className='course school'>
-            <p><b>50h on-site course</b> in Javascript.<br></br>
-            Asociación Española de <br></br>Programadores Informáticos<br></br>[2019 - 2 months]
-            </p>
-          </div>
-          <div className='master school'>
-            <p><b>300h on-site course + final project</b> in web design and development. Escuela CICE.<br></br>[2016 -- 6 months]</p>
-          </div>
           <div className='degree school'>
             <p><b>Graphic Design Degree</b> in the <b>Escuela Superior de Diseño de Madrid</b> (ESDM).<br></br>[2012 --- 2017]</p>
           </div>
           <div className='erasmus school'>
             <p><b>Erasmus+</b> in <b>Aalto University</b> school of arts, design and achitecture (Finland).<br></br> [2015 -- 5 months (1st semester)]</p>
+          </div>
+          <div className='master school'>
+            <p><b>300h on-site course + final project</b> in web design and development. Escuela CICE.<br></br>[2016 -- 6 months]</p>
+          </div>
+          <div className='course school'>
+            <p><b>50h on-site course</b> in Javascript.<br></br>
+            Asociación Española de <br></br>Programadores Informáticos<br></br>[2019 - 2 months]
+            </p>
+          </div>
+          <div className='course start'>
+            <p className='extra-info'>Then I started to work and<br></br>
+            I realize that I can learn more<br></br>
+            in a job than in a course.<br></br>
+            </p>
           </div>
         </div>
 
