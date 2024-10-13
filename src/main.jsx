@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
-import Cursor from './Cursor'
-import Canvas from './Canvas'
+import Cursor from './components/Cursor'
+import Canvas from './components/Canvas'
+
 import Header from './Header'
 import Resume from './Resume'
 import Footer from './Footer'

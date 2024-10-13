@@ -32,7 +32,7 @@ function Column3() {
             <div className='bar id-bar'></div><div className='pro-bar id-pro-bar'></div>
             <p className='label-soft-skill id'>indesign</p>
           </div>
-
+          <p className='extra-info'>I know how outdated is this bar system to indicate the level I have with any software... but I find it cute.<br></br>By the way, I'm OK with Adobe XD and Figma.</p>
           <h5>Video tools</h5>
           <div className='soft-skill'>
             <img src={pr} alt="premiere logo pr adobe" />
@@ -44,13 +44,14 @@ function Column3() {
             <div className='bar ae-bar'></div><div className='pro-bar ae-pro-bar'></div>
             <p className='label-soft-skill ae'>After Effects</p>
           </div>
-          
+          <p className='extra-info'>As you can see my level in video is lower, but I love to use my own pictures and videos in my work. And I'm super interested in DaVinci Resolve.</p>
           <h5>Audio tools</h5>
           <div className='soft-skill'>
             <img src={live} alt="ableton live logo" />
             <div className='bar live-bar'></div><div className='pro-bar live-pro-bar'></div>
             <p className='label-soft-skill ab'>Ableton</p>
           </div>
+          <p className='extra-info'>I mostly use ableton to record what I do with my hardware. But I have used this software a lot in many ways. The next goal is use it for a film!</p>
         </div>
 
         <div className='langs topic'>
@@ -84,7 +85,7 @@ function Column3() {
           <div className='points'>
             <div className='email point'>
               <p>
-                <b>Email:</b> damalgadesign[at]gmail.com
+                <b>Email:</b> damalga@protonmail.com
               </p>
             </div>
           </div>
@@ -92,7 +93,7 @@ function Column3() {
 
         <div className='bye topic'>
           <h4>BYE!</h4>
-          <p>... and have a nice <span className='opensource'> opensource^^</span> day.</p>
+          <p>... and have a nice <span className='opensource'>(opensource)</span> day.</p>
           <h6>Damian;</h6>
         </div>
 

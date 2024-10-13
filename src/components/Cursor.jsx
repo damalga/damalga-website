@@ -28,16 +28,15 @@ function Cursor() {
     });
     
     document.body.addEventListener("pointermove", updateCursorPosition);
+    
     document.body.addEventListener("pointerdown", () => {
-        gsap.to(cursorInner, 0.15, {
-            scale: 2,
-        });
+        gsap.fromTo(cursorInner, { scale: 1 }, { scale: 2, duration: 0.15 });
     });
+    
     document.body.addEventListener("pointerup", () => {
-        gsap.to(cursorInner, 0.15, {
-            scale: 1,
-        });
+        gsap.fromTo(cursorInner, { scale: 2 }, { scale: 1, duration: 0.15 });
     });
+    
     
     function updateCursorPosition(e) {
         mouse.x = e.pageX;
