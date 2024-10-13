@@ -316,6 +316,11 @@ section.second .name h3 {
   width: 20%;
   margin-right: 0.8em;
 }
+.resume .col-1 .edu .job.info,
+.resume .col-1 .work .job.info {
+  text-align: right;
+  justify-content: flex-end;
+}
 .resume .col-1 .edu {
   margin-bottom: 1.6em;
 }
@@ -333,11 +338,14 @@ section.second .name h3 {
 .resume .col-2 .projects .project {
   display: flex;
   align-items: center;
-  margin: 1.2em 0;
+  margin: 1.2rem 0;
 }
 .resume .col-2 .projects .project img {
   width: 25%;
-  margin-right: 0.8em;
+  margin-right: 0.8rem;
+}
+.resume .col-2 .projects .extra-info {
+  padding-bottom: 0.8rem;
 }
 .resume .col-2 .skills .on-off,
 .resume .col-2 .skills .front-end {
@@ -372,7 +380,7 @@ section.second .name h3 {
 }
 .resume .col-2 .skills .front-end .front-end-icons .text {
   width: 80%;
-  padding: 1.2em 0.8em 0 0.8em;
+  padding: 1.2rem 0.8rem 0 0.8rem;
 }
 .resume .col-3 h5 {
   margin-bottom: 0;
@@ -399,9 +407,6 @@ section.second .name h3 {
   width: 15%;
   position: relative;
   top: 1.635em;
-}
-.resume .col-3 .soft-skills .soft-skill .ae {
-  top: 1.64em;
 }
 .resume .col-3 .soft-skills .soft-skill .bar,
 .resume .col-3 .soft-skills .soft-skill .pro-bar {
@@ -439,6 +444,10 @@ section.second .name h3 {
   font-size: 0.8em;
   font-style: italic;
   text-align: right;
+}
+.resume .col-3 .soft-skills .extra-info {
+  text-align: right;
+  padding-bottom: 1rem;
 }
 .resume .col-3 .langs,
 .resume .col-3 .interests,
