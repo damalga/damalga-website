@@ -1,2 +1,4 @@
-# damalga-web-2022
-Portfolio
+# damalga-website
+Portfolio / Resume
+
+https://damalga.com
