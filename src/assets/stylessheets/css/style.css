@@ -222,7 +222,7 @@ a {
 }
 
 header {
-  padding: 1.2em;
+  padding: 0 1.2rem 1.2rem;
 }
 header div {
   padding: 1.2em;
@@ -287,12 +287,13 @@ section.second .name h3 {
   font-size: 0.8em;
   font-style: italic;
   line-height: 1.2em;
+  text-align: right;
 }
 .resume p {
   line-height: 1.4em;
 }
 .resume .col-1 .face {
-  width: 82%;
+  width: 76%;
   margin-bottom: 1.6em;
 }
 .resume .col-1 .edu .school,
@@ -307,7 +308,7 @@ section.second .name h3 {
 .resume .col-1 .edu .job:last-child,
 .resume .col-1 .work .school:last-child,
 .resume .col-1 .work .job:last-child {
-  margin-bottom: 0.4em;
+  margin-bottom: 0;
 }
 .resume .col-1 .edu .school img,
 .resume .col-1 .edu .job img,
@@ -332,24 +333,12 @@ section.second .name h3 {
   border-right: 0.05em solid #000;
   border-left: 0.05em solid #000;
 }
-.resume .col-2 .projects {
+.resume .col-2 .skills {
   margin-bottom: 1.6rem;
-}
-.resume .col-2 .projects .project {
-  display: flex;
-  align-items: center;
-  margin: 1.2rem 0;
-}
-.resume .col-2 .projects .project img {
-  width: 25%;
-  margin-right: 0.8rem;
-}
-.resume .col-2 .projects .extra-info {
-  padding-bottom: 0.8rem;
 }
 .resume .col-2 .skills .on-off,
 .resume .col-2 .skills .front-end {
-  margin-bottom: 1em;
+  margin-bottom: 1.2rem;
 }
 .resume .col-2 .skills .front-end {
   margin-bottom: 0;
@@ -361,12 +350,9 @@ section.second .name h3 {
   flex-wrap: wrap;
   overflow: hidden;
 }
-.resume .col-2 .skills .front-end .front-end-icons img,
-.resume .col-2 .skills .front-end .front-end-icons .level {
-  width: 20%;
-}
 .resume .col-2 .skills .front-end .front-end-icons img {
-  padding-top: 0.6em;
+  width: 20%;
+  padding-bottom: 0.8rem;
 }
 .resume .col-2 .skills .front-end .front-end-icons .level {
   font-size: 1.6em;
@@ -380,7 +366,35 @@ section.second .name h3 {
 }
 .resume .col-2 .skills .front-end .front-end-icons .text {
   width: 80%;
-  padding: 1.2rem 0.8rem 0 0.8rem;
+  padding: 0 0.8rem 1.6rem;
+}
+.resume .col-2 .langs .level {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  font-weight: 600;
+}
+.resume .col-2 .langs .level label,
+.resume .col-2 .langs .level span {
+  display: block;
+}
+.resume .col-2 .langs .level span {
+  font-weight: 500;
+  font-size: 0.8em;
+  line-height: 1.2em;
+  margin-top: 0.3em;
+}
+.resume .col-2 .projects {
+  margin-bottom: 1.6rem;
+}
+.resume .col-2 .projects .project {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+.resume .col-2 .projects .project img {
+  width: 25%;
+  margin-right: 0.8rem;
 }
 .resume .col-3 h5 {
   margin-bottom: 0;
@@ -398,6 +412,8 @@ section.second .name h3 {
   background: #000;
   position: relative;
   bottom: 1.2em;
+  animation: fluctuate 3s infinite ease-in-out;
+  transform-origin: left;
 }
 .resume .col-3 .soft-skills .soft-skill {
   position: relative;
@@ -406,7 +422,7 @@ section.second .name h3 {
 .resume .col-3 .soft-skills .soft-skill img {
   width: 15%;
   position: relative;
-  top: 1.635em;
+  top: 1.58em;
 }
 .resume .col-3 .soft-skills .soft-skill .bar,
 .resume .col-3 .soft-skills .soft-skill .pro-bar {
@@ -421,21 +437,33 @@ section.second .name h3 {
 }
 .resume .col-3 .soft-skills .soft-skill .pro-bar.psd-pro-bar {
   width: 70%;
+  animation: fluctuate 2s infinite ease-in-out;
+  animation-delay: 0.2s;
 }
 .resume .col-3 .soft-skills .soft-skill .pro-bar.ai-pro-bar {
   width: 64%;
+  animation: fluctuate 2s infinite ease-in-out;
+  animation-delay: 0.4s;
 }
 .resume .col-3 .soft-skills .soft-skill .pro-bar.id-pro-bar {
   width: 56%;
+  animation: fluctuate 2s infinite ease-in-out;
+  animation-delay: 0.3s;
 }
 .resume .col-3 .soft-skills .soft-skill .pro-bar.pr-pro-bar {
   width: 44%;
+  animation: fluctuate 2s infinite ease-in-out;
+  animation-delay: 0.6s;
 }
 .resume .col-3 .soft-skills .soft-skill .pro-bar.ae-pro-bar {
   width: 48%;
+  animation: fluctuate 2s infinite ease-in-out;
+  animation-delay: 0.5s;
 }
 .resume .col-3 .soft-skills .soft-skill .pro-bar.live-pro-bar {
   width: 52%;
+  animation: fluctuate 2s infinite ease-in-out;
+  animation-delay: 0.7s;
 }
 .resume .col-3 .soft-skills .soft-skill .label-soft-skill {
   width: 100%;
@@ -449,26 +477,26 @@ section.second .name h3 {
   text-align: right;
   padding-bottom: 1rem;
 }
-.resume .col-3 .langs,
+@keyframes fluctuate {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(0.98);
+  }
+  50% {
+    transform: scaleX(1.04);
+  }
+  75% {
+    transform: scaleX(0.96);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 .resume .col-3 .interests,
 .resume .col-3 .contact {
   margin-bottom: 1.6rem;
-}
-.resume .col-3 .langs .level {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  font-weight: 600;
-}
-.resume .col-3 .langs .level label,
-.resume .col-3 .langs .level span {
-  display: block;
-}
-.resume .col-3 .langs .level span {
-  font-weight: 500;
-  font-size: 0.8em;
-  line-height: 1.2em;
-  margin-top: 0.3em;
 }
 .resume .col-3 .interests .points {
   display: flex;

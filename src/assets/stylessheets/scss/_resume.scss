@@ -1,7 +1,7 @@
 .resume {
     display: flex;
     flex-wrap: wrap;
-    section[class^='col-'] {
+    section[class^="col-"] {
         width: 33.33%;
         padding: 1.2em;
         display: flex;
@@ -19,17 +19,17 @@
         color: $black;
     }
     .extra-info {
-        font-size: .8em;
+        font-size: 0.8em;
         font-style: italic;
         line-height: 1.2em;
+        text-align: right;
     }
     p {
         line-height: 1.4em;
-        
     }
     .col-1 {
         .face {
-            width: 82%;
+            width: 76%;
             margin-bottom: 1.6em;
         }
         .edu,
@@ -39,49 +39,35 @@
                 display: flex;
                 align-items: center;
                 margin: 1.2em 0;
-                &:last-child{
-                    margin-bottom: .4em;
+                &:last-child {
+                    margin-bottom: 0;
                 }
                 img {
                     width: 20%;
-                    margin-right: .8em;
+                    margin-right: 0.8em;
                 }
             }
-            .job.info{
+            .job.info {
                 text-align: right;
                 justify-content: flex-end;
             }
         }
-        .edu{
+        .edu {
             margin-bottom: 1.6em;
-            .start{
+            .start {
                 text-align: right;
             }
         }
     }
     .col-2 {
         flex-direction: column;
-        border-right: .05em solid #000;
-        border-left: .05em solid #000;
-        .projects {
-            margin-bottom: 1.6rem;
-            .project{
-                display: flex;
-                align-items: center;
-                margin: 1.2rem 0;
-                img{
-                    width: 25%;
-                    margin-right: .8rem;
-                }
-            }
-            .extra-info{
-                padding-bottom: .8rem;
-            }
-        }
+        border-right: 0.05em solid #000;
+        border-left: 0.05em solid #000;
         .skills {
+            margin-bottom: 1.6rem;
             .on-off,
             .front-end {
-                margin-bottom: 1em;
+                margin-bottom: 1.2rem;
             }
             .front-end {
                 margin-bottom: 0;
@@ -93,105 +79,26 @@
                         flex-wrap: wrap;
                         overflow: hidden;
                     }
-                    img,
-                    .level {
-                        width: 20%;
-                    }
                     img {
-                        padding-top: .6em;
+                        width: 20%;
+                        padding-bottom: 0.8rem;
                     }
                     .level {
                         font-size: 1.6em;
                         text-align: center;
                         color: #444;
-                        padding-top: .2em;
+                        padding-top: 0.2em;
                         display: inline-block;
                         span {
-                            font-size: .8em;
+                            font-size: 0.8em;
                         }
                     }
                     .text {
                         width: 80%;
-                        padding: 1.2rem .8rem 0 .8rem;
+                        padding: 0 0.8rem 1.6rem;
                     }
                 }
             }
-        }
-    }
-    .col-3 {
-        h5{
-            margin-bottom: 0;
-        }
-        .soft-skills {
-            .bar,
-            .pro-bar {
-                height: 1.2em;
-            }
-            .bar {
-                width: 100%;
-                border: .05em solid #000;
-            }
-            .pro-bar {
-                width: 85%;
-                background: #000;
-                position: relative;
-                bottom: 1.2em;
-            }
-            .soft-skill {
-                position: relative;
-                bottom: .8em;
-                img {
-                    width: 15%;
-                    position: relative;
-                    top: 1.635em;
-                }
-                .bar,
-                .pro-bar {
-                    left: 15%;
-                }
-                .bar,
-                .label-soft-skill {
-                    position: relative;
-                }
-                .bar {
-                    width: 85%;
-                }
-                .pro-bar.psd-pro-bar {
-                    width: 70%;
-                }
-                .pro-bar.ai-pro-bar {
-                    width: 64%;
-                }
-                .pro-bar.id-pro-bar {
-                    width: 56%;
-                }
-                .pro-bar.pr-pro-bar {
-                    width: 44%;
-                }
-                .pro-bar.ae-pro-bar {
-                    width: 48%;
-                }
-                .pro-bar.live-pro-bar {
-                    width: 52%;
-                }
-                .label-soft-skill {
-                    width: 100%;
-                    display: block;
-                    bottom: .8em;
-                    font-size: .8em;
-                    font-style: italic;
-                    text-align: right;
-                }
-            }
-            .extra-info{
-                text-align: right;
-                padding-bottom: 1rem;
-            }
-        }
-        .langs,
-        .interests,
-        .contact{
-            margin-bottom: 1.6rem;
         }
         .langs {
             .level {
@@ -205,11 +112,147 @@
                 }
                 span {
                     font-weight: 500;
-                    font-size: .8em;
+                    font-size: 0.8em;
                     line-height: 1.2em;
-                    margin-top: .3em;
+                    margin-top: 0.3em;
                 }
             }
+        }
+        .projects {
+            margin-bottom: 1.6rem;
+            .project {
+                display: flex;
+                align-items: center;
+                margin: 1.2rem 0;
+                img {
+                    width: 25%;
+                    margin-right: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .col-3 {
+        h5 {
+            margin-bottom: 0;
+        }
+        .soft-skills {
+            .bar,
+            .pro-bar {
+                height: 1.2em;
+            }
+
+            .bar {
+                width: 100%;
+                border: 0.05em solid #000;
+            }
+
+            .pro-bar {
+                width: 85%;
+                background: #000;
+                position: relative;
+                bottom: 1.2em;
+                animation: fluctuate 3s infinite ease-in-out;
+                transform-origin: left;
+            }
+
+            .soft-skill {
+                position: relative;
+                bottom: 0.8em;
+
+                img {
+                    width: 15%;
+                    position: relative;
+                    top: 1.58em;
+                }
+
+                .bar,
+                .pro-bar {
+                    left: 15%;
+                }
+
+                .bar,
+                .label-soft-skill {
+                    position: relative;
+                }
+
+                .bar {
+                    width: 85%;
+                }
+
+                .pro-bar.psd-pro-bar {
+                    width: 70%;
+                    animation: fluctuate 2s infinite ease-in-out;
+                    animation-delay: 0.2s;
+                }
+
+                .pro-bar.ai-pro-bar {
+                    width: 64%;
+                    animation: fluctuate 2s infinite ease-in-out;
+                    animation-delay: 0.4s;
+                }
+
+                .pro-bar.id-pro-bar {
+                    width: 56%;
+                    animation: fluctuate 2s infinite ease-in-out;
+                    animation-delay: 0.3s;
+                }
+
+                .pro-bar.pr-pro-bar {
+                    width: 44%;
+                    animation: fluctuate 2s infinite ease-in-out;
+                    animation-delay: 0.6s;
+                }
+
+                .pro-bar.ae-pro-bar {
+                    width: 48%;
+                    animation: fluctuate 2s infinite ease-in-out;
+                    animation-delay: 0.5s;
+                }
+
+                .pro-bar.live-pro-bar {
+                    width: 52%;
+                    animation: fluctuate 2s infinite ease-in-out;
+                    animation-delay: 0.7s;
+                }
+
+                .label-soft-skill {
+                    width: 100%;
+                    display: block;
+                    bottom: 0.8em;
+                    font-size: 0.8em;
+                    font-style: italic;
+                    text-align: right;
+                }
+            }
+
+            .extra-info {
+                text-align: right;
+                padding-bottom: 1rem;
+            }
+        }
+
+        @keyframes fluctuate {
+            0% {
+                transform: scaleX(1); // Mantiene su tamaño original
+            }
+            25% {
+                transform: scaleX(0.98); // Se reduce un poco
+            }
+            50% {
+                transform: scaleX(1.04); // Se expande un poco
+            }
+            75% {
+                transform: scaleX(0.96); // Vuelve a reducirse
+            }
+            100% {
+                transform: scaleX(1); // Retorna al tamaño original
+            }
+        }
+
+        .interests,
+        .contact {
+            margin-bottom: 1.6rem;
         }
         .interests {
             .points {
@@ -222,7 +265,7 @@
                         width: 48px;
                     }
                     p {
-                        font-size: .8em;
+                        font-size: 0.8em;
                         line-height: 1.2em;
                     }
                 }
@@ -231,23 +274,23 @@
         .contact {
             .points {
                 .point {
-                    margin-bottom: .8em;
+                    margin-bottom: 0.8em;
                     p {
                         line-height: 1em;
                     }
                 }
             }
         }
-        .bye{
-            h4{
+        .bye {
+            h4 {
                 font-size: 2em;
             }
-            p{
-                .opensource{
-                    font-size: .7em;
+            p {
+                .opensource {
+                    font-size: 0.7em;
                 }
             }
-            h6{
+            h6 {
                 text-align: right;
                 margin-bottom: 0;
                 font-style: italic;
