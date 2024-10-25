@@ -1,6 +1,7 @@
 .resume {
     display: flex;
     flex-wrap: wrap;
+
     section[class^="col-"] {
         width: 33.33%;
         padding: 1.2em;
@@ -8,70 +9,143 @@
         flex-direction: column;
         justify-content: space-between;
     }
+
     .bold,
     .link {
         font-weight: 600;
+
         span {
             font-weight: 400;
         }
     }
+
     .link {
         color: $black;
     }
+
     .extra-info {
         font-size: 0.8em;
         font-style: italic;
         line-height: 1.2em;
         text-align: right;
     }
+
     p {
         line-height: 1.4em;
     }
+
     .col-1 {
-        .face {
-            width: 76%;
-            margin-bottom: 1.6em;
+        .intro {
+            display: flex;
+            justify-content: space-between;
+            .face {
+                width: 76%;
+                margin-bottom: 1.6em;
+            }
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 50px;
+                height: 24px;
+                svg.moon,
+                svg.sun{
+                    color: $white;
+                    z-index: 1;
+                    position: relative;
+                }
+                svg.moon{
+                    top: 2px;
+                    left: 4px;
+                }
+                svg.sun{
+                    top: 2px;
+                    right: -6px;
+                }
+                input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    &:checked+.slider:before {
+                        transform: translateX(26px);
+                    }
+                }
+                .slider {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: $black;
+                    transition: 0.4s;
+                    border-radius: 24px;
+                    cursor: pointer;
+                    &:before {
+                        position: absolute;
+                        content: "";
+                        height: 18px;
+                        width: 18px;
+                        left: 3px;
+                        bottom: 3px;
+                        background-color: white;
+                        transition: 0.4s;
+                        border-radius: 50%;
+                    }
+                }
+            }
         }
+
         .edu,
         .work {
+
             .school,
             .job {
                 display: flex;
                 align-items: center;
                 margin: 1.2em 0;
+
                 &:last-child {
                     margin-bottom: 0;
                 }
+
                 img {
                     width: 20%;
                     margin-right: 0.8em;
                 }
             }
+
             .job.info {
                 text-align: right;
                 justify-content: flex-end;
             }
         }
+
         .edu {
             margin-bottom: 1.6em;
+
             .start {
                 text-align: right;
             }
         }
     }
+
     .col-2 {
         flex-direction: column;
         border-right: 0.05em solid #000;
         border-left: 0.05em solid #000;
+
         .skills {
             margin-bottom: 1.6rem;
+
             .on-off,
             .front-end {
                 margin-bottom: 1.2rem;
             }
+
             .front-end {
                 margin-bottom: 0;
+
                 .front-end-icons {
+
                     .css,
                     .node,
                     .git {
@@ -79,20 +153,24 @@
                         flex-wrap: wrap;
                         overflow: hidden;
                     }
+
                     img {
                         width: 20%;
                         padding-bottom: 0.8rem;
                     }
+
                     .level {
                         font-size: 1.6em;
                         text-align: center;
                         color: #444;
                         padding-top: 0.2em;
                         display: inline-block;
+
                         span {
                             font-size: 0.8em;
                         }
                     }
+
                     .text {
                         width: 80%;
                         padding: 0 0.8rem 1.6rem;
@@ -100,30 +178,13 @@
                 }
             }
         }
-        .langs {
-            .level {
-                display: flex;
-                justify-content: space-around;
-                text-align: center;
-                font-weight: 600;
-                label,
-                span {
-                    display: block;
-                }
-                span {
-                    font-weight: 500;
-                    font-size: 0.8em;
-                    line-height: 1.2em;
-                    margin-top: 0.3em;
-                }
-            }
-        }
+
         .projects {
-            margin-bottom: 1.6rem;
             .project {
                 display: flex;
                 align-items: center;
                 margin: 1.2rem 0;
+
                 img {
                     width: 25%;
                     margin-right: 0.8rem;
@@ -136,7 +197,9 @@
         h5 {
             margin-bottom: 0;
         }
+
         .soft-skills {
+
             .bar,
             .pro-bar {
                 height: 1.2em;
@@ -152,7 +215,7 @@
                 background: #000;
                 position: relative;
                 bottom: 1.2em;
-                animation: fluctuate 3s infinite ease-in-out;
+                animation: fluctuate 6s infinite ease-in-out;
                 transform-origin: left;
             }
 
@@ -183,25 +246,25 @@
                 .pro-bar.psd-pro-bar {
                     width: 70%;
                     animation: fluctuate 2s infinite ease-in-out;
-                    animation-delay: 0.2s;
+                    animation-delay: 0.1s;
                 }
 
                 .pro-bar.ai-pro-bar {
                     width: 64%;
                     animation: fluctuate 2s infinite ease-in-out;
-                    animation-delay: 0.4s;
+                    animation-delay: 0.3s;
                 }
 
                 .pro-bar.id-pro-bar {
                     width: 56%;
                     animation: fluctuate 2s infinite ease-in-out;
-                    animation-delay: 0.3s;
+                    animation-delay: 0.2s;
                 }
 
                 .pro-bar.pr-pro-bar {
                     width: 44%;
                     animation: fluctuate 2s infinite ease-in-out;
-                    animation-delay: 0.6s;
+                    animation-delay: 0.4s;
                 }
 
                 .pro-bar.ae-pro-bar {
@@ -213,7 +276,7 @@
                 .pro-bar.live-pro-bar {
                     width: 52%;
                     animation: fluctuate 2s infinite ease-in-out;
-                    animation-delay: 0.7s;
+                    animation-delay: 0.6s;
                 }
 
                 .label-soft-skill {
@@ -234,36 +297,66 @@
 
         @keyframes fluctuate {
             0% {
-                transform: scaleX(1); // Mantiene su tamaño original
+                transform: scaleX(1);
             }
+
             25% {
-                transform: scaleX(0.98); // Se reduce un poco
+                transform: scaleX(0.98);
             }
+
             50% {
-                transform: scaleX(1.04); // Se expande un poco
+                transform: scaleX(1.04);
             }
+
             75% {
-                transform: scaleX(0.96); // Vuelve a reducirse
+                transform: scaleX(0.96);
             }
+
             100% {
-                transform: scaleX(1); // Retorna al tamaño original
+                transform: scaleX(1);
             }
         }
 
         .interests,
-        .contact {
+        .contact,
+        .langs {
             margin-bottom: 1.6rem;
         }
+
+        .langs {
+            .level {
+                display: flex;
+                justify-content: space-around;
+                text-align: center;
+                font-weight: 600;
+
+                label,
+                span {
+                    display: block;
+                }
+
+                span {
+                    font-weight: 500;
+                    font-size: 0.8em;
+                    line-height: 1.2em;
+                    margin-top: 0.3em;
+                }
+            }
+        }
+
         .interests {
             .points {
                 display: flex;
                 align-items: flex-end;
                 justify-content: space-between;
+
                 .interest {
                     text-align: center;
+
                     img {
                         width: 48px;
                     }
+
                     p {
                         font-size: 0.8em;
                         line-height: 1.2em;
@@ -271,29 +364,35 @@
                 }
             }
         }
+
         .contact {
             .points {
                 .point {
                     margin-bottom: 0.8em;
+
                     p {
                         line-height: 1em;
                     }
                 }
             }
         }
+
         .bye {
             h4 {
                 font-size: 2em;
             }
+
             p {
                 .opensource {
                     font-size: 0.7em;
                 }
             }
+
             h6 {
                 text-align: right;
                 margin-bottom: 0;
                 font-style: italic;
+                line-height: 1em;
             }
         }
     }

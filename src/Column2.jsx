@@ -12,18 +12,7 @@ function Column2() {
         <div className="on-off">
           <h5>Print & Digital</h5>
           <p>
-            I have many useful references and resources to transmit the values
-            of a brand and graphically capture them into online and offline
-            media... In my
-            <a
-              className="link"
-              href="https://www.behance.net/damalga"
-              target="_blank"
-            >
-              Behance
-            </a>
-            account you can find some of the work that I have most enjoyed along
-            my graphic design studies.
+            With a strong mix of references and resources, I bring brand values to life across digital and print media. Check out my <a className="link" href="https://www.behance.net/damalga" target="_blank">Behance</a> for some of my favorite projects from my creative journey.
           </p>
         </div>
         <div className="front-end">
@@ -31,77 +20,33 @@ function Column2() {
           <div className="front-end-icons">
             <div className="css">
               <img src={css} alt="bootstrap" />
-              <p className="text">
-                Proficient in HTML and CSS, with solid knowledge of
-                <a
-                  className="link"
-                  href="https://handlebarsjs.com/"
-                  target="_blank"
-                >
-                  Handlebars
-                </a>
-                for dynamic templating, as well as
-                <a
-                  className="link"
-                  href="https://sass-lang.com/"
-                  target="_blank"
-                >
-                  Sass
-                </a>
-                and various stylesheet libraries. Skilled at efficiently setting
-                and styling elements on the screen.
+              <p className="text">High level in HTML and CSS, with solid knowledge of <a className="link" href="https://handlebarsjs.com/" target="_blank">Handlebars</a> for dynamic templating, as well as <a className="link" href="https://sass-lang.com/" target="_blank">Sass</a> and various stylesheet libraries. Skilled at efficiently setting and styling elements on the screen.
               </p>
             </div>
             <div className="node">
               <img src={nodee} alt="node" />
-              <p className="text">
-                Mid level in JavaScript. I'm deeply passionate about the
-                language and always up-to-date with libraries and frameworks.
-                Constantly exploring new ways to maximize the potential of ES6
-                and beyond.
-              </p>
+              <p className="text">Mid level in JavaScript. I'm deeply passionate about the language and always up-to-date with libraries and frameworks. Constantly exploring new ways to maximize the potential of ES6 and beyond.</p>
             </div>
             <div className="git">
               <img src={git} alt="git" />
               <p className="text">
-                <del>Low level</del> Begineer in...<br></br>
-                Ignorant of everthing.<br></br>
+                <del>Low level</del> Beginner in...<br></br>
+                everything, except giving up.<br></br>
                 Full coding energy.<br></br>
-                <a
-                  className="link"
-                  href="https://github.com/damalga"
-                  target="_blank"
-                >
-                  Github
-                </a>
-                ,
-                <a
-                  className="link"
-                  href="https://bitbucket.org/damalga/"
-                  target="_blank"
-                >
-                  Bitbucket
-                </a>
-                and <br></br>
-                <a
-                  className="link"
-                  href="https://stackoverflow.com/users/9181614/damalga"
-                  target="_blank"
-                >
-                  Stackoverflow
-                </a>
-                . Ready to fuse design and tech with creativity and code.
+                <a className="link" href="https://github.com/damalga" target="_blank">Github</a>, <a className="link" href="https://bitbucket.org/damalga/" target="_blank">Bitbucket</a> and <br></br>
+                <a className="link" href="https://stackoverflow.com/users/9181614/damalga" target="_blank">Stackoverflow</a>. Ready to fuse design and tech with creativity and code.
               </p>
             </div>
           </div>
           <p className="extra-info">
-            Countless experiences as front-end developer in projects builds on
-            Ruby on Rails, Symfony, React... And CMS’s like Liferay, Drupal,
-            Magnolia, Wordpress and more. Or With tools like Gulp, Grunt, Vite
-            or Webpack...<br></br>
+            Countless front-end experiences in projects built on React, Ruby on Rails, Symfony... and CMSs like Liferay, Drupal, WordPress, and more... So, adapting to build any view or interaction with any core comes naturally to me.
+            <br></br>
+            <br></br>
+            I used to work with Gulp to optimize my code, but since Webpack showed up, it's been my main tool for bundling. I'm just getting started with Vite, and it's cool how fast it runs in development.
+            <br></br>
             <br></br>
             Oh! and I'm definitely not bad on the terminal, neither on few linux
-            distribution...<br></br>I use Arch btw XD
+            distribution...<br></br>I (don't) use Arch btw XD
           </p>
         </div>
       </div>
@@ -139,19 +84,6 @@ function Column2() {
           vinyls and I'm fascinated by synths, drum machines and basically any
           gadget or device that makes noise.
         </p>
-      </div>
-
-      <div className="langs topic">
-        <h4>LANGUAGES</h4>
-        <div className="level">
-          <label>
-            Spanish <br></br>
-            <span>(Native)</span>
-          </label>
-          <label>
-            English <span>(Fluent-ish chaos master)</span>
-          </label>
-        </div>
       </div>
     </section>
   );

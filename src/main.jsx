@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 
 import Cursor from './components/Cursor'
 import Canvas from './components/Canvas'
+import Switch from './components/Switch'
 
 import Header from './Header'
 import Resume from './Resume'
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('portfolio')).render(
   <React.StrictMode>
     <Cursor />
     <Canvas />
+    <Switch />
     <Header />
     <Resume />
     <Footer />

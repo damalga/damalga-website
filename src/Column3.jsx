@@ -54,43 +54,37 @@ function Column3() {
           <p className="label-soft-skill ab">Ableton</p>
         </div>
         <p className="extra-info">
-          I know this bar system might seem a bit outdated to indicate any
-          skill...But I think it reflects how my knowledge fluctuates based on
-          what I'm more motivated by at the moment. :)
+          I know this bar system might seem a bit outdated to indicate any skill... But I think it reflects how my knowledge fluctuates based on what I'm more motivated by at the moment :)
         </p>
+      </div>
+
+      <div className="langs topic">
+        <h4>LANGUAGES</h4>
+        <div className="level">
+          <label>
+            Spanish <br></br>
+            <span>(Native)</span>
+          </label>
+          <label>
+            English <span>(Fluent-ish chaos master)</span>
+          </label>
+        </div>
       </div>
 
       <div className="interests topic">
         <h4>INTERESTS</h4>
         <div className="points">
           <div className="mus-film interest">
-            <img
-              src={int1}
-              className="int1"
-              alt="music, films and digital arts"
-            />
-            <p>
-              Music, cinema<br></br>& digital arts
-            </p>
+            <img src={int1} className="int1" alt="music, films and digital arts"/>
+            <p>Music, cinema<br></br>& digital arts</p>
           </div>
           <div className="sci-tec interest">
-            <img
-              src={int2}
-              className="int2"
-              alt="science, nature and technology"
-            />
-            <p>
-              Science, Nature<br></br>& Technology
-            </p>
+            <img src={int2} className="int2" alt="science, nature and technology"/>
+            <p>Science, Nature<br></br>& Technology</p>
           </div>
           <div className="trips-narr interest">
-            <img
-              src={int3}
-              className="int3"
-              alt="trips, vehicles and narratives"
-            />
-            <p>
-              Trips, vehicles<br></br>& narratives
+            <img src={int3} className="int3" alt="trips, vehicles and narratives"/>
+            <p>Trips, vehicles<br></br>& narratives
             </p>
           </div>
         </div>
@@ -100,19 +94,14 @@ function Column3() {
         <h4>CONTACT</h4>
         <div className="points">
           <div className="email point">
-            <p>
-              <b>Email:</b> damalga@protonmail.com
-            </p>
+            <p><b>Email:</b> damalga@protonmail.com</p>
           </div>
         </div>
       </div>
 
       <div className="bye topic">
         <h4>BYE!</h4>
-        <p>
-          ... and have a nice <span className="opensource">(opensource)</span>{" "}
-          day.
-        </p>
+        <p>... and have a nice <span className="opensource">(opensource)</span> day.</p>
         <h6>Damian;</h6>
       </div>
     </section>
