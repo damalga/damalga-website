@@ -438,6 +438,9 @@ section.second .name h3 {
 .resume .col-3 h5 {
   margin-bottom: 0;
 }
+.resume .col-3 .soft-skills {
+  margin-bottom: 1.6rem;
+}
 .resume .col-3 .soft-skills .bar,
 .resume .col-3 .soft-skills .pro-bar {
   height: 1.2em;
@@ -514,7 +517,6 @@ section.second .name h3 {
 }
 .resume .col-3 .soft-skills .extra-info {
   text-align: right;
-  padding-bottom: 1rem;
 }
 @keyframes fluctuate {
   0% {

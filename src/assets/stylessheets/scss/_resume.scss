@@ -197,19 +197,16 @@
         h5 {
             margin-bottom: 0;
         }
-
         .soft-skills {
-
+            margin-bottom: 1.6rem;
             .bar,
             .pro-bar {
                 height: 1.2em;
             }
-
             .bar {
                 width: 100%;
                 border: 0.05em solid #000;
             }
-
             .pro-bar {
                 width: 85%;
                 background: #000;
@@ -218,43 +215,35 @@
                 animation: fluctuate 6s infinite ease-in-out;
                 transform-origin: left;
             }
-
             .soft-skill {
                 position: relative;
                 bottom: 0.8em;
-
                 img {
                     width: 15%;
                     position: relative;
                     top: 1.58em;
                 }
-
                 .bar,
                 .pro-bar {
                     left: 15%;
                 }
-
                 .bar,
                 .label-soft-skill {
                     position: relative;
                 }
-
                 .bar {
                     width: 85%;
                 }
-
                 .pro-bar.psd-pro-bar {
                     width: 70%;
                     animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.1s;
                 }
-
                 .pro-bar.ai-pro-bar {
                     width: 64%;
                     animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.3s;
                 }
-
                 .pro-bar.id-pro-bar {
                     width: 56%;
                     animation: fluctuate 2s infinite ease-in-out;
@@ -266,19 +255,16 @@
                     animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.4s;
                 }
-
                 .pro-bar.ae-pro-bar {
                     width: 48%;
                     animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.5s;
                 }
-
                 .pro-bar.live-pro-bar {
                     width: 52%;
                     animation: fluctuate 2s infinite ease-in-out;
                     animation-delay: 0.6s;
                 }
-
                 .label-soft-skill {
                     width: 100%;
                     display: block;
@@ -291,7 +277,6 @@
 
             .extra-info {
                 text-align: right;
-                padding-bottom: 1rem;
             }
         }
 
