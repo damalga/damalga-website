@@ -155,11 +155,16 @@ p {
   font-size: 0.9em;
 }
 
-html.night-mode {
+html.dark-mode {
   filter: invert(1);
 }
-
-#canvas {
+html body {
+  /*dat.gui*/
+}
+html body .dg.ac {
+  display: none;
+}
+html body #canvas {
   position: fixed;
   top: 0;
   left: 0;
@@ -167,8 +172,7 @@ html.night-mode {
   height: 100vh;
   background-blend-mode: multiply;
 }
-
-#portfolio {
+html body #portfolio {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -186,13 +190,11 @@ html.night-mode {
   left: 50%;
   transform: translate(-50%);
 }
-
-::selection {
+html body ::selection {
   background: #1B52BF;
   color: #ffffff;
 }
-
-b {
+html body b {
   font-weight: 600;
 }
 
