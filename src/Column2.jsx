@@ -7,6 +7,35 @@ import nodee from "./assets/svgs/nodee.svg";
 function Column2() {
   return (
     <section className="col-2">
+      <div className="projects topic">
+        <h4>PROJECTS</h4>
+        <div className="alcarcia music project">
+          <img src={alcarcia} alt="alcarcia logo" />
+          <p className="bold">
+            Alcarcia <br></br>
+            <span>Artist / Producer</span>
+            <br></br>
+            <a className="link" href="https://www.alcarcia.com" target="_blank">
+              Website
+            </a>
+          </p>
+        </div>
+        <div className="polymorphism music project">
+          <img src={polymorphism} alt="polymorphism logo" />
+          <p className="bold">
+            Polymorphism Records <br></br>
+            <span>Record label</span>
+            <br></br>
+            <a className="link" href="https://www.polymorphismrecords.com" target="_blank">Website</a>
+          </p>
+        </div>
+        <p className="first extra-info">
+          Both projects take electronic music as their starting point. I collect
+          vinyls and I'm fascinated by synths, drum machines and basically any
+          gadget or device that makes noise.
+        </p>
+      </div>
+
       <div className="skills topic">
         <h4>SKILLS</h4>
         <div className="on-off">
@@ -49,41 +78,6 @@ function Column2() {
             distribution...<br></br>I (don't) use Arch btw XD
           </p>
         </div>
-      </div>
-
-      <div className="projects topic">
-        <h4>PROJECTS</h4>
-        <div className="alcarcia music project">
-          <img src={alcarcia} alt="alcarcia logo" />
-          <p className="bold">
-            Alcarcia <br></br>
-            <span>Artist / Producer</span>
-            <br></br>
-            <a className="link" href="https://www.alcarcia.com" target="_blank">
-              Website
-            </a>
-          </p>
-        </div>
-        <div className="polymorphism music project">
-          <img src={polymorphism} alt="polymorphism logo" />
-          <p className="bold">
-            Polymorphism Records <br></br>
-            <span>Record label</span>
-            <br></br>
-            <a
-              className="link"
-              href="https://www.polymorphismrecords.com"
-              target="_blank"
-            >
-              Website
-            </a>
-          </p>
-        </div>
-        <p className="first extra-info">
-          Both projects take electronic music as their starting point. I collect
-          vinyls and I'm fascinated by synths, drum machines and basically any
-          gadget or device that makes noise.
-        </p>
       </div>
     </section>
   );

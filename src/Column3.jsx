@@ -54,7 +54,7 @@ function Column3() {
           <p className="label-soft-skill ab">Ableton</p>
         </div>
         <p className="extra-info">
-          I know this bar system might seem a bit outdated to indicate any skill... But I think it reflects how my knowledge fluctuates based on what I'm more motivated by at the moment :)
+          I know this bar system might seem a bit outdated to indicate any skill... But it captures the way my skills fluctuate with my focus and each project.
         </p>
       </div>
 
