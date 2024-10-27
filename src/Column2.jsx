@@ -74,8 +74,7 @@ function Column2() {
             I used to work with Gulp to optimize my code, but since Webpack showed up, it's been my main tool for bundling. I'm just getting started with Vite, and it's cool how fast it runs in development.
             <br></br>
             <br></br>
-            Oh! and I'm definitely not bad on the terminal, neither on few linux
-            distribution...<br></br>I (don't) use Arch btw XD
+            Oh! and I'm definitely not bad on the terminal,<br></br>or with git. Not on Linux either!<br></br>I (don't) use Arch btw XD
           </p>
         </div>
       </div>

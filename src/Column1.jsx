@@ -45,7 +45,7 @@ function Column1() {
           <h4>WORK EXPERIENCE</h4>
           <div className='ging job'>
             <img src={ging} alt="ging logo" />
-            <p>Research scholarship,<br></br> <b><a className='link' href="https://https://ging.github.io/" target="_blank">GING</a></b> (ETSIT / UPM).<br></br> (2016 - 2017).</p>
+            <p>Research scholarship,<br></br> <b><a className='link' href="https://ging.github.io/" target="_blank">GING</a></b> (ETSIT / UPM).<br></br> (2016 - 2017).</p>
           </div>
           <div className='nateevo job'>
             <img src={nateevo} alt="nateevo logo" />
@@ -57,11 +57,11 @@ function Column1() {
           </div>
           <div className='cheil job'>
             <img src={cheil} alt="cheil logo" />
-            <p>Digital Graphic Designer,<br></br> <b><a className='link' href="https://www.cheil.com/es" target="_blank">Cheil Spain</a></b>.<br></br> (2020 - 2022).</p>
+            <p>Hybrid Designer,<br></br> <b><a className='link' href="https://www.cheil.com/es" target="_blank">Cheil Spain</a></b>.<br></br> (2020 - 2022).</p>
           </div>
           <div className='vocento job'>
             <img src={vocento} alt="vocento logo" />
-            <p>Front-end developer,<br></br> <b><a className='link' href="https://www.cheil.com/es" target="_blank">Vocento</a></b>.<br></br> (2023 - current).</p>
+            <p>Front-layout developer,<br></br> <b><a className='link' href="https://www.cheil.com/es" target="_blank">Vocento</a></b>.<br></br> (2023 - present).</p>
           </div>
         </div>
       </section>
