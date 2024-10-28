@@ -468,9 +468,6 @@ section.second .name h3 {
   position: relative;
   top: 1.6rem;
 }
-.resume .col-3 .soft-skills .soft-skill img.idlogo, .resume .col-3 .soft-skills .soft-skill img.ablogo {
-  top: 1.58rem;
-}
 .resume .col-3 .soft-skills .soft-skill .bar,
 .resume .col-3 .soft-skills .soft-skill .pro-bar {
   left: 15%;
