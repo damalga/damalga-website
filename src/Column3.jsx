@@ -16,39 +16,39 @@ function Column3() {
 
         <h5>Graphic tools</h5>
         <div className="soft-skill">
-          <img src={ps} alt="photoshop logo psd adobe" />
+          <img src={ps} className="psdlogo" alt="photoshop logo psd adobe" />
           <div className="bar psd-bar"></div>
           <div className="pro-bar psd-pro-bar"></div>
           <p className="label-soft-skill psd">photoshop</p>
         </div>
         <div className="soft-skill">
-          <img src={ai} alt="illustrator logo ai adobe" />
+          <img src={ai} className="ailogo" alt="illustrator logo ai adobe" />
           <div className="bar ai-bar"></div>
           <div className="pro-bar ai-pro-bar"></div>
           <p className="label-soft-skill ai">illustrator</p>
         </div>
         <div className="soft-skill">
-          <img src={id} alt="indesign logo id adobe" />
+          <img src={id} className="idlogo" alt="indesign logo id adobe" />
           <div className="bar id-bar"></div>
           <div className="pro-bar id-pro-bar"></div>
           <p className="label-soft-skill id">indesign</p>
         </div>
         <h5>Video tools</h5>
         <div className="soft-skill">
-          <img src={pr} alt="premiere logo pr adobe" />
+          <img src={pr} className="prlogo" alt="premiere logo pr adobe" />
           <div className="bar pr-bar"></div>
           <div className="pro-bar pr-pro-bar"></div>
           <p className="label-soft-skill pr">Premiere</p>
         </div>
         <div className="soft-skill">
-          <img src={ae} alt="after effects logo ae adobe" />
+          <img src={ae} className="aelogo" alt="after effects logo ae adobe" />
           <div className="bar ae-bar"></div>
           <div className="pro-bar ae-pro-bar"></div>
           <p className="label-soft-skill ae">After Effects</p>
         </div>
         <h5>Audio tools</h5>
         <div className="soft-skill">
-          <img src={live} alt="ableton live logo" />
+          <img src={live} className="ablogo" alt="ableton live logo" />
           <div className="bar live-bar"></div>
           <div className="pro-bar live-pro-bar"></div>
           <p className="label-soft-skill ab">Ableton</p>
